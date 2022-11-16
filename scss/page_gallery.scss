@@ -1,0 +1,15 @@
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/common";
+// Include Bootstrap
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+// Include Owlcarousel
+@import "./../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+// Layouts Files
+@import "./layouts/header";
+@import "./layouts/footer";
+// Page Files
+@import "./hero/gallery";
+@import "./pages/gallery";
+// Media Query
+@import "./media/gallery";

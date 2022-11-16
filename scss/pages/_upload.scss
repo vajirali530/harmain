@@ -1,0 +1,151 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #579EA6;
+
+    .hero-image {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.upload-container {
+    .heading {
+        display: inline-block;
+        margin-bottom: 40px;
+        position: relative;
+        margin-left: calc(var(--bs-gutter-x) * .5);
+        h1 {
+            font-size: 32px;
+            line-height: 30px;
+            @extend .text-uppercase;
+            @include font-bold;
+            background-color: #fff;
+            position: relative;
+            padding: 10px 15px;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                display: block;
+                background-color: $dark-primary;
+                width: 25px;
+                height: 25px;
+                z-index: -1
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                right: -8px;
+                display: block;
+                background-color: $dark-primary;
+                width: 25px;
+                height: 25px;
+                z-index: -1
+            }
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            display: block;
+            background-color: $dark-primary;
+            width: 25px;
+            height: 25px;
+            z-index: -1
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: -8px;
+            display: block;
+            background-color: $dark-primary;
+            width: 25px;
+            height: 25px;
+            z-index: -1
+        }
+    }
+    .upload-btn {
+        button {
+            @include radius(30px);
+            background-color: $primary;
+            padding: 10px 40px;
+            font-size: 20px;
+            color: #fff;
+
+            &:hover {
+                background-color: $dark-primary;
+            }
+        }
+    }
+    .captcha {
+        margin-top: 25px;
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 28px;
+            line-height: 22px;
+            color: #94a3b8;
+        }
+    }
+
+    .error-message,
+    label.error {
+        height: 20px;
+        font-size: 13px;
+        color: red;
+        font-weight: 600;
+    }
+
+    label.error {
+        position: absolute;
+        top: -24px;
+        left: 0;
+    }
+
+}
+
+.filepond--credits {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .upload-container {
+        .heading {
+            h1 {
+                font-size: 26px;
+                padding: 8px 10px;
+
+                &::after {
+                    width: 22px;
+                    height: 22px;
+                }
+                &::before {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+            &::before {
+                width: 22px;
+                height: 22px;
+            }
+            &::after {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}

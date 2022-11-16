@@ -1,0 +1,25 @@
+@mixin font-normal {
+    font-family: $font-family-sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font-bold {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin radius($width: 5px) {
+    border-radius: $width;
+    -webkit-border-radius: $width;
+    -moz-border-radius: $width;
+    -ms-border-radius: $width;
+    -o-border-radius: $width;
+}
+
+@mixin shadow($x: 0px, $y: 3px, $blur: 6px, $color: rgba(0,0,0,.16)) {
+    -moz-box-shadow:    $x $y $blur 0 $color;
+    -webkit-box-shadow: $x $y $blur 0 $color;
+    box-shadow:         $x $y $blur 0 $color;
+}

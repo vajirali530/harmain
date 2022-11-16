@@ -1,0 +1,535 @@
+@media (max-width: 1401px) {
+    section.ourgallery .owl-carousel .item-container {
+        width: 450px;
+        height: 450px;
+    }
+    section .content .col-md-6 picture img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1201px) {
+    .hero {
+        background-color: $secondary;
+    }
+    section .content .col-md-6 picture img {
+        width: 100% !important;
+    }
+    section.ourgallery .owl-carousel .item-container {
+        width: 370px;
+        height: 370px;
+    }
+    footer .footer-link a {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    section .content .col-md-6 picture img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 993px) {
+    header {
+        .navbar {
+            padding: 0;
+            .container {
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                width: 100%;
+
+                .toggler,
+                .quick-action {
+                    &.mobile {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    header .navbar .nav,header .navbar .download-brochure{
+        display: none;
+    }
+    header .navbar .logo-navItems{
+        width: 100%;
+        justify-content: space-between;
+    } 
+    header {
+        .nav-mobile {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 1031;
+            top: 0;
+            left: 0;
+            background-color: $primary;
+            .container {
+                max-width: 100% !important;
+                width: 100% !important;
+                .toggler {
+                    &.mobile {
+                        background-color: $primary;
+                    }
+                }
+                .quick-action {
+                    background-color: $white;
+                }
+            }
+            .nav-menu {
+                margin-top: 82px;
+                ul.nav {
+                    padding: 40px 15px;
+                    .nav-item {
+                        padding: 0;
+                        .nav-link {
+                            color: $secondary;
+                            padding: 15px 0;
+                            @include font-bold;
+                            text-transform: uppercase;
+                            font-size: 30px;
+                            line-height: 37px;
+                            &:hover {
+                                color: $dark-primary;
+                            }
+                            img {
+                                margin-left: 20px;
+                                margin-top: -5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .quick-actions {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                display: block;
+                .action-call,
+                .action-email {
+                    .title {
+                        @include font-bold;
+                        display: block;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-transform: uppercase;
+                        color: $dark-primary;
+                    }
+                    a {
+                        @include font-bold;
+                        display: block;
+                        font-size: 28px;
+                        line-height: 34px;
+                        color: $white;
+                        text-decoration: none;
+                        &:hover {
+                            color: $dark-primary;
+                        }
+                    }
+                }
+                .action-call {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .hero {
+        padding: 248px 0 140px !important;
+    }
+    .hero h1 span.small, .hero .h1 span.small {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .hero h1 span, .hero .h1 span {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .hero h1 span.smaller, .hero .h1 span.smaller {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    section .content .col-md-7 picture img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    section .content .col-md-7 picture::after {
+        content: "";
+        width: 220px;
+        height: 320px;
+        top: 40px;
+        left: -20px;
+    }
+    section .content .content-list .aminity-list li {
+        min-width: 90px;
+        max-width: 110px;
+        padding: 5px;
+    }
+    section .content .content-list .aminity-list li img {
+        width: 36px;
+        height: 36px;
+    }
+    section .content .content-list .plan-total-key {
+        &.col-md-2 {
+            width: 25%;
+        }
+        &.col-md-9 {
+            width: 75%;
+        }
+    }
+    section.ourgallery .owl-carousel .item-container {
+        width: 320px;
+        height: 320px;
+    }
+    footer .footer-link a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    section .content .col-md-6 picture img {
+        width: 100% !important;
+    }
+    section .content .content-list .aminity-list {
+        flex-wrap: unset !important;
+        overflow-x: auto;
+    }
+    section .content .content-list .view-detail-action {
+        right: -4%;
+    }
+    section .content .content-list .plan-action {
+        display: block !important;
+    }
+}
+
+@media (max-width: 769px) {
+
+    header {
+        .nav-mobile {
+            .nav-menu {
+                ul{
+                    &.nav {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        padding: 248px 0 30px !important;
+        background-image: url('../../images/hero-background-sm.webp');
+        .row {
+            .col-md-8 {
+                width: 100% !important;
+                h1 {
+                    text-align: center !important;
+                }
+                .talk-action {
+                    justify-content: center !important;
+                }
+            }
+            .col-md-4 {
+                display: none !important;
+            }
+        }
+
+        .actions {
+            display: block;
+            .quick-plans {
+                width: 100%;
+                display: block !important;
+                text-align: center;
+                margin-top: 150px;
+                .btn-quickview {
+                    display: inline-block !important;
+                    &:first-child {
+                        margin: 0px !important;
+                        margin-right: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &.aboutus {
+            .row {
+                &.content {
+                    .col-md-5, .col-md-7 {
+                        width: 100% !important;
+                    }
+                    .col-md-7 {
+                        display: block !important;
+                        picture {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.bhk-2,
+        &.bhk-3 {
+            .row {
+                &.content {
+                    .col-md-6 {
+                        width: 100% !important;
+                        display: block !important;
+                        picture {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                    }
+                    .content-list {
+                        display: block !important;
+                        .plan-status {
+                            display: none;
+                        }
+                        .plan-total-grp {
+                            margin-top: 30px;
+                            display: inline-block !important;
+                            width: 160px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    section .content .content-list {
+        padding: 0 15px !important;
+    }
+    section .content .content-list .plan-total-key.col-md-2 {
+        display: block !important;
+        width: 100% !important;
+    }
+    section .content .content-list .plan-total-val {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    section.bhk-2 .row.content .col-md-6,
+    section.bhk-3 .row.content .col-md-6 {
+        width: auto !important;
+        display: inline-block !important;
+    }
+    section .content .content-list .view-detail-action {
+        bottom: 0;
+        top: unset;
+        right: 0;
+    }
+    section.bhk-2 .plan-status-mobile,
+    section.bhk-3 .plan-status-mobile {
+        @include font-bold;
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+    }
+    section.ourgallery .owl-carousel .item-container {
+        width: 250px;
+        height: 250px;
+    }
+    footer .container .row {
+        display: block !important;
+        .col-md-4,.col-md-3,.col-md-2 {
+            display: block !important;
+            width: 100% !important;
+        }
+    }
+    footer .footer-link {
+        display: inline-block !important;
+        margin-right: 20px;
+    }
+    footer .footer-header {
+        margin-top: 20px !important;
+    }
+    section .content .content-list .aminity-list {
+        flex-wrap: unset !important;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 577px) {
+    header {
+        .nav-mobile {
+            .nav-menu {
+                ul{
+                    &.nav {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 26px;
+                                line-height: 34px;
+                            }
+                        }
+                    }
+                }
+            }
+            .quick-actions {
+                .action-call{
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    section {
+        .title {
+            font-size: 22px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        &.bhk-plan {
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+        
+        .content {
+            .col-md-4 {
+                .item {
+                    h4 {
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    header .navbar .nav-brand picture img {
+        width: 230px !important;
+        height: 44px !important;
+    }
+    .hero h1 span.small, .hero .h1 span.small {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .hero h1 span, .hero .h1 span {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .hero h1 span.smaller, .hero .h1 span.smaller {
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: none !important;
+    }
+    .hero .talk-action .btn-talk {
+        padding: 17px 44px;
+    }
+    .hero .talk-action .talk-view {
+        margin-left: 12px;
+    }
+    .hero .talk-action .talk-view a {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .hero .actions .quick-plans {
+        margin-top: 160px;
+    }
+    .hero .quick-plans .btn-quickview {
+        padding: 16px;
+    }
+    section .content .col-md-4 {
+        margin-bottom: 16px !important;
+        padding: 16px !important;
+        @include shadow;
+        @include radius(5px);
+    }
+    section.webelieve .container .row.content {
+        margin: 5px !important;
+    }
+    section {
+        padding: 40px 0;
+    }
+    footer {
+        padding: 40px 0;
+    }
+    section.bhk-2 .plan-status-mobile, section.bhk-3 .plan-status-mobile {
+        top: 60px;
+        right: 16px;
+    }
+    section .content .content-list .view-detail-action {
+        right: 16px;
+    }
+    section.ourgallery .owl-carousel .item-container {
+        width: 370px;
+        height: 370px;
+        margin: 0 auto;    
+    }
+    section .content .content-list .plan-action {
+        display: none !important;
+    }
+    section .content .content-list .plan-action-mobile {
+        display: flex;
+        a {
+            display: block;
+            margin-right: 10px;
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    section {
+        padding: 30px 0;
+    }
+    .hero .quick-plans .btn-quickview span {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    // section.bhk-2 .plan-status-mobile, section.bhk-3 .plan-status-mobile {
+    //     top: 40px;
+    // }
+}
+@media (max-width: 420px) {
+    header .navbar .container .quick-action.mobile {
+        display: none;
+    }
+    header .navbar .container {
+        justify-content: start !important;
+    }
+    .hero {
+        padding: 168px 0 30px !important;
+    }
+    .hero .row .col-md-8 .talk-action {
+        flex-direction: column;
+    }
+    .hero .talk-action .talk-view span {
+        text-align: center;
+    }
+    .hero .talk-action .talk-view {
+        margin: 0;
+        margin-top: 16px;
+    }
+    .hero .actions .quick-plans {
+        margin-top: 65px;
+    }
+    .hero .actions .quick-plans .btn-quickview {
+        display: block !important;
+        margin: 0px !important;
+        &:first-child {
+            margin: 0px !important;
+            margin-bottom: 10px !important;
+        }
+    }
+    section.ourgallery .owl-carousel .item-container {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0px 20px !important;
+    }
+}

@@ -1,0 +1,76 @@
+header {
+    .navbar {
+        @extend .navbar-light;
+        @extend .navbar-expand-lg;
+        @extend .fixed-top;
+        @extend .bg-white;
+        @include shadow;
+        padding: 24px 0;
+        visibility: hidden;
+
+        .toggler,
+        .quick-action {
+            &.mobile {
+                display: none;
+                width: 82px;
+                height: 82px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .quick-action {
+            &.mobile { background-color: $primary; }
+        }
+        .nav-brand {
+            display: inline-block;
+            picture {
+                img {
+                    width: 295px !important;
+                    height: 56px !important;
+                }
+            }
+        }
+        .nav {
+            @extend .justify-content-end;
+            @extend .align-items-center;
+            .nav-item {
+                .nav-link {
+                    @extend .text-secondary;
+                    @extend .text-uppercase;
+                    @include font-normal;
+                    color: $secondary;                    
+                    &:hover {
+                        @extend .text-primary;
+                    }
+                    &.active-link {
+                        color: $primary !important;
+                    }
+                }
+            }
+        }
+        // btn btn-primary text-white text-uppercase
+        .download-brochure{
+            .btn-inquiry {
+                @extend .btn;
+                @extend .btn-primary;
+                @extend .text-white;
+                @extend .text-uppercase;
+                @include font-bold;
+                padding: 18px 28px;
+                border: 0;
+                @include radius(30px);
+                margin-left: 15px;
+            }
+        }
+    }
+    .nav-mobile {
+        transform: translateX(-100%);
+        transition: 0.3s transform;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .nav-mobile {
+        display: none;
+    }
+}

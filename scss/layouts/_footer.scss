@@ -1,0 +1,105 @@
+footer {
+    @extend .text-white;
+    padding: 70px 0;
+    background-color: $primary;
+    .brand-light {
+        display: block;
+        picture {
+            img {
+                width: 295px !important;
+                height: 56px !important;
+            }
+        }
+        p {
+            @include font-normal;
+            margin: 0;
+            padding: 0;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    .footer-header {
+        @include font-normal;
+        @extend .text-uppercase;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .footer-link {
+        display: block;
+        margin-bottom: 20px;
+        span {
+            display: block;
+            @include font-bold;
+            @extend .text-uppercase;
+            font-size: 16px;
+            line-height: 18px;
+            color: $dark-primary;
+        }
+        a {
+            @include font-bold;
+            @extend .text-white;
+            font-size: 28px;
+            line-height: 34px;
+            text-decoration: none;
+            &:hover {
+                color: $dark-primary !important;
+            }
+        }
+        .social-link {
+            &:hover {
+                svg {
+                    path {
+                        fill: $dark-primary;
+                    }
+                }
+            }
+        }
+
+        .footer-address {
+            @include font-bold;
+            @extend .text-white;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .footer-extra-link {
+        .title {
+            @include font-normal;
+            @extend .text-uppercase;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 5px;
+        }
+        .content {
+            @include font-bold;
+            @extend .text-uppercase;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.copyrights {
+    padding: 12px;
+    background-color: $secondary;
+    color: $white;
+    .copyright-text {
+        position: relative;
+        @include font-normal;
+        text-align: center;
+        font-size: 14px;
+        span {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        a {
+            @extend .text-white;
+            text-decoration: none;
+            &:hover {
+                @extend .text-primary;
+            }
+        }
+    }
+}

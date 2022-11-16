@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Product Sans';
+    src:    url('./../../fonts/Inter-Black.ttf') format('truetype'),
+            url('./../../fonts/Inter-ExtraLight.ttf') format('truetype'),
+            url('./../../fonts/Inter-Light.ttf') format('truetype'),
+            url('./../../fonts/Inter-Medium.ttf') format('truetype'),
+            url('./../../fonts/Inter-Regular.ttf') format('truetype'),
+            url('./../../fonts/Inter-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src:    url('./../../fonts/Inter-Bold.ttf') format('truetype'),
+            url('./../../fonts/Inter-ExtraBold.ttf') format('truetype'),
+            url('./../../fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$body-bg: #FFFFFF;
+$body-color: #2C2E35;
+$primary: #E1A046;
+$secondary: $body-color;
+$light-primary: #ECF4F5;
+$dark-primary: #9A2A23;
+$white: $body-bg;
+
+$font-family-sans-serif: 'Inter', sans-serif !default;
+
+$enable-caret: false !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: false !default;
+$enable-validation-icons: false !default;

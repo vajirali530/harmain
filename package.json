@@ -1,0 +1,18 @@
+{
+  "name": "mominsara.com",
+  "version": "1.0.0",
+  "description": "Mominsara website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abidhusain Chidi <abidhusain@qalbit.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "gsap": "^3.8.0",
+    "jquery-lazy": "^1.7.11",
+    "jquery-validation": "^1.19.3",
+    "owl.carousel": "^2.3.4"
+  }
+}

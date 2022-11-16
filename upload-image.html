@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="nofollow,noindex" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="icon"
+      href="./images/logo/ms-favicon.png"
+      type="image/gif"
+      sizes="32x32"
+    />
+    <title>Mominsara - Website</title>
+    <link rel="stylesheet" href="./css/upload/main.css" />
+    <link rel="stylesheet" href="./css/toast-plugin/toast-plugin.min.css" />
+    <link
+      href="https://unpkg.com/filepond@^4/dist/filepond.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero Content -->
+    <section class="hero p-4">
+      <div class="container">
+        <div class="row">
+          <div class="hero-image text-center">
+            <img src="./images/logo/light.svg" alt="Mominsara Developers" />
+          </div>
+          <div class="hero-content d-none">
+            <div class="header">
+              <h1>Mominsara Developers</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="upload-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="heading">
+              <h1>Upload your images</h1>
+            </div>
+          </div>
+          <div class="warning text-center">
+            <div>
+              <strong class="text-danger">NOTE :</strong> Accepted file types
+              are png, jpg & jpeg with maximum 3MB size per image. Also you can
+              only select 5 images per post.
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="upload-form">
+              <form
+                action=""
+                id="upload-form"
+                method="POST"
+                enctype="multipart/form-data"
+              >
+                <div class="form-group" id="file_type">
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group" id="file_size">
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="file"
+                    class="filepond"
+                    id="imagepond"
+                    name="filepond"
+                    multiple
+                    data-allow-reorder="true"
+                    data-max-file-size="3MB"
+                    data-max-files="5"
+                    accept="image/png, image/jpeg, image/jpg"
+                  />
+                </div>
+                <div class="upload-btn mt-4">
+                  <button
+                    class="btn"
+                    type="submit"
+                    name="submit_upload_form"
+                    value="submit_upload_form"
+                  >
+                    Upload
+                  </button>
+                  <div class="submit-loader ml-3 d-none">
+                    <div class="spinner-border text-primary align-middle"></div>
+                  </div>
+                </div>
+
+                <div class="captcha">
+                  <span>Protected by Google recaptcha</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="./js/toast-plugin.min.js"></script>
+    <script src="./js/file_validate.js"></script>
+  </body>
+</html>

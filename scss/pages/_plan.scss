@@ -1,0 +1,90 @@
+.plans {
+    .wrapper {
+        @extend .text-center;
+
+        .plans-container {
+            .collection {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, auto);
+                grid-auto-flow: row dense;
+                gap: 20px;
+                grid-row-gap: 50px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .plan {
+                    .head {
+                        overflow: hidden;
+                        text-align: left;
+                        .title {
+                            @include font-bold;
+                            @extend .text-uppercase;
+                            @extend .text-secondary;
+                            font-size: 26px;
+                            line-height: 34px;
+                            margin-bottom: 15px;
+                            position: relative;
+                            padding-left: 15px;
+                            span {
+                                @include font-normal;
+                            }
+
+                            &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                height: 100%;
+                                width: 6px;
+                                top: 0;
+                                left: 0;
+                                background-color: $dark-primary;
+                            }
+                        }
+                    }
+                    .image {
+                        height: auto;
+                        overflow: hidden;
+
+                        a {
+                            display: block;
+                            overflow: hidden;
+                            height: 100%;
+                            border-radius: 25px;
+
+                            &:hover {
+                                img {
+                                    transform: scale(1.08);
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transform: scale(1.01);
+                                transition: 0.8s transform;
+                            }
+                        }
+
+                    }
+
+                    &.threebhk-plan {
+                        // grid-column: span 2;
+                        // align-items: center;
+                        // @extend .row;
+                        // @extend .align-items-stretch;
+
+                        .image {
+                            // @extend .col-md-6;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

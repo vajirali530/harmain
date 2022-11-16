@@ -1,0 +1,122 @@
+.hero {
+    padding: 0;
+    @extend .bg-dark;
+    @extend .text-white;
+    background-color: $secondary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding: 293px 0 185px;
+    background-image: url('../../images/hero-background.png');
+
+    .hero-content {
+        overflow: hidden;
+    }
+
+    h1 {
+        span {
+            display: block;
+            @include font-bold;
+            @extend .text-uppercase;
+            font-size: 70px;
+            line-height: 85px;
+            &.small {
+                @include font-normal;
+                @extend .text-uppercase;
+                font-size: 40px;
+                line-height: 48px;
+            }
+            &.smaller {
+                @include font-normal;
+                @extend .text-uppercase;
+                font-size: 28px;
+                line-height: 34px;
+            }
+        }
+    }
+    .talk-action {
+        position: relative;
+        padding: 30px 0 0;
+        @extend .d-flex;
+        @extend .align-items-center;
+        .btn-talk {
+            @extend .btn;
+            @extend .btn-outline-primary;
+            @extend .bg-white;
+            @extend .text-uppercase;
+            @include font-bold;
+            @include radius(30px);
+            background-color: $primary !important;
+            color: white;
+            display: inline-block;
+            padding: 20px 55px;
+            line-height: 18px;
+            border-color: transparent;
+            &:hover {
+                @extend .bg-primary;
+                @extend .text-white;
+            }
+        }
+        .talk-view {
+            display: inline-block;
+            margin-left: 20px;
+            span {
+                display: block;
+                @extend .text-uppercase;
+                @include font-bold;
+            }
+            a {
+                text-decoration: none;
+                @extend .text-white;
+                @include font-bold;
+                font-size: 28px;
+                line-height: 37px;
+                &:hover {
+                    @extend .text-primary;
+                }
+            }
+        }
+    }
+
+    .quick-plans {
+        @extend .d-flex;
+        @extend .flex-column;
+        @extend .align-items-end;
+        .btn-quickview {
+            @extend .btn;
+            @extend .btn-secondary;
+            @extend .text-white;
+            @extend .text-uppercase;
+            @include font-normal;
+            position: relative;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: start;
+            padding: 20px;
+            display: block;
+            span {
+                display: block;
+                margin-top: 10px;
+                @include font-bold;
+                font-size: 28px;
+                line-height: 34px;
+            }
+            img {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            &:first-child {
+                margin-bottom: 60px;
+            }
+        }
+        > a {
+            visibility: hidden;
+        }
+    }
+
+    .actions {
+        display: none;
+    }
+}
