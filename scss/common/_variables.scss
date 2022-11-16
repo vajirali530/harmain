@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Product Sans';
+    font-family: 'Inter', sans-serif;
     src:    url('./../../fonts/Inter-Black.ttf') format('truetype'),
             url('./../../fonts/Inter-ExtraLight.ttf') format('truetype'),
             url('./../../fonts/Inter-Light.ttf') format('truetype'),
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-    font-family: 'Product Sans';
+    font-family: 'Inter', sans-serif;
     src:    url('./../../fonts/Inter-Bold.ttf') format('truetype'),
             url('./../../fonts/Inter-ExtraBold.ttf') format('truetype'),
             url('./../../fonts/Inter-SemiBold.ttf') format('truetype');
@@ -28,6 +28,7 @@ $secondary: $body-color;
 $light-primary: #ECF4F5;
 $dark-primary: #9A2A23;
 $white: $body-bg;
+$gray:#F5F5F5;
 
 $font-family-sans-serif: 'Inter', sans-serif !default;
 

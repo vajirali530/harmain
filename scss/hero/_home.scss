@@ -2,13 +2,8 @@
     padding: 0;
     @extend .bg-dark;
     @extend .text-white;
-    background-color: $secondary;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     padding: 293px 0 185px;
-    background-image: url('../../images/hero-background.png');
-
+    background-color: $body-color;
     .hero-content {
         overflow: hidden;
     }
@@ -20,6 +15,9 @@
             @extend .text-uppercase;
             font-size: 70px;
             line-height: 85px;
+            &.harmain33{
+                color: $primary;
+            }
             &.small {
                 @include font-normal;
                 @extend .text-uppercase;
@@ -46,15 +44,21 @@
             @extend .text-uppercase;
             @include font-bold;
             @include radius(30px);
-            background-color: $primary !important;
-            color: white;
             display: inline-block;
             padding: 20px 55px;
             line-height: 18px;
             border-color: transparent;
+            background-color: $primary !important;
+            color: $white;
             &:hover {
-                @extend .bg-primary;
-                @extend .text-white;
+                @extend .bg-light;
+                @extend .text-dark;
+                @extend .border-light;
+                svg{
+                    path{
+                        stroke:$primary;
+                    }
+                }
             }
         }
         .talk-view {

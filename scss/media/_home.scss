@@ -10,7 +10,6 @@
 
 @media (max-width: 1201px) {
     .hero {
-        background-color: $secondary;
     }
     section .content .col-md-6 picture img {
         width: 100% !important;
@@ -31,6 +30,10 @@
 @media (max-width: 993px) {
     header {
         .navbar {
+            .logo-navItems{
+                width: 100%;
+                justify-content: space-between;
+            }
             padding: 0;
             .container {
                 margin: 0;
@@ -47,13 +50,9 @@
             }
         }
     }
-    header .navbar .nav,header .navbar .download-brochure{
+    header .navbar .nav,header .navbar .download-brochuer {
         display: none;
     }
-    header .navbar .logo-navItems{
-        width: 100%;
-        justify-content: space-between;
-    } 
     header {
         .nav-mobile {
             width: 100%;
@@ -218,7 +217,6 @@
 
     .hero {
         padding: 248px 0 30px !important;
-        background-image: url('../../images/hero-background-sm.webp');
         .row {
             .col-md-8 {
                 width: 100% !important;

@@ -38,7 +38,7 @@ header {
                     @extend .text-secondary;
                     @extend .text-uppercase;
                     @include font-normal;
-                    color: $secondary;                    
+                    
                     &:hover {
                         @extend .text-primary;
                     }
@@ -48,8 +48,8 @@ header {
                 }
             }
         }
-        // btn btn-primary text-white text-uppercase
-        .download-brochure{
+        .download-brochuer{
+            // btn btn-primary text-white text-uppercase
             .btn-inquiry {
                 @extend .btn;
                 @extend .btn-primary;

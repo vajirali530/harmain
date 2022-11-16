@@ -1,3 +1,22 @@
+.webelieve .container .title{
+    background-color: $gray;
+    display: inline-flex;
+    width: 342px;
+    height: 60px;
+    padding-left: 16px;
+    position: relative;
+    align-items: center;
+    &::after{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 10px;
+        background-color: $dark-primary;    
+        left: 0;
+        top: 0;
+    }
+}
+
 section {
     .title {
         @include font-bold;
@@ -7,7 +26,7 @@ section {
         line-height: 34px;
         margin-bottom: 30px;
         span {
-            @include font-normal;
+            color: $primary;
         }
     }
     .content {
@@ -49,18 +68,6 @@ section {
                     height: 474px !important;
                     max-width: 100%;
                     height: auto !important;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 242px;
-                    height: 353px;
-                    top: 60px;
-                    left: -22px;
-                    background-image: url('../../images/bg-about.webp');
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    z-index: -1;
                 }
             }
         }
