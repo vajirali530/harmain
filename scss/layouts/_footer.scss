@@ -1,7 +1,19 @@
 footer {
+    div{
+        .footer-info{
+            .project-reraNumber{
+                .projectBy{
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+    .logo{
+        margin-right: 160px;
+    }
     @extend .text-white;
     padding: 70px 0;
-    background-color: $primary;
+    background-color: $body-color;
     .brand-light {
         display: block;
         picture {
@@ -22,9 +34,10 @@ footer {
     .footer-header {
         @include font-normal;
         @extend .text-uppercase;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 29px;
         margin-bottom: 20px;
+        font-weight: 900;
     }
     .footer-link {
         display: block;
@@ -34,20 +47,24 @@ footer {
             @include font-bold;
             @extend .text-uppercase;
             font-size: 16px;
-            line-height: 18px;
-            color: $dark-primary;
+            line-height: 19px;
+            font-weight: 700;
+            margin-bottom: 6px;
         }
         a {
             @include font-bold;
             @extend .text-white;
-            font-size: 28px;
-            line-height: 34px;
+            font-size: 24px;
+            line-height: 29px;
             text-decoration: none;
             &:hover {
                 color: $dark-primary !important;
             }
         }
         .social-link {
+            svg{
+                border-radius: 50%;
+            }
             &:hover {
                 svg {
                     path {
@@ -62,34 +79,39 @@ footer {
             @extend .text-white;
             font-size: 20px;
             line-height: 24px;
+            font-weight: 700;
         }
     }
     .footer-extra-link {
         .title {
             @include font-normal;
             @extend .text-uppercase;
-            font-size: 18px;
-            line-height: 22px;
-            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 6px;
+            font-weight: 700;
         }
         .content {
             @include font-bold;
             @extend .text-uppercase;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 24px;
+            line-height: 29px;
             margin-bottom: 20px;
+            font-weight: 700;
         }
     }
 }
 .copyrights {
     padding: 12px;
-    background-color: $secondary;
+    background-color: #0A0A0A;
     color: $white;
     .copyright-text {
         position: relative;
         @include font-normal;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
         span {
             font-size: 15px;
             font-family: sans-serif;

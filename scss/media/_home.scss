@@ -1,3 +1,21 @@
+@media (max-width: 1600px){
+    .hero-container{
+        .hero.home{
+            .container-fluid{
+                background-image: url(../../images/background/sample1.png);
+            }
+        }
+    }
+}
+@media (max-width: 1500px){
+    .hero-container{
+        .hero.home{
+            .container-fluid{
+                background-image: url(../../images/background/sample2.png);
+            }
+        }
+    }
+}
 @media (max-width: 1401px) {
     section.ourgallery .owl-carousel .item-container {
         width: 450px;
@@ -7,8 +25,48 @@
         width: 100% !important;
     }
 }
+@media (max-width: 1300px){
+    .hero-container{
+        .hero.home{
+            .container-fluid{
+                background-image: url(../../images/background/sample3.png);
+            }
+        }
+        .hero-video{
+            width: 52% !important;
+        }
+    }
+}
 
 @media (max-width: 1201px) {
+    .hero-container{
+        .hero.home{
+            .container-fluid{
+                background-image: url(../../images/background/sample4.png);
+                .container{
+                    margin-left: 0px !important;
+                    margin-right: 0px !important;
+                    .left-side{
+                        .hero-content{
+                            div{
+                                .harmain33{
+                                    font-size: 85px;
+                                }
+                                .smaller{
+                                    padding-right: 40px;
+                                    line-height: unset;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero-video{
+            width: 56% !important;
+        }
+    }
     .hero {
     }
     section .content .col-md-6 picture img {
@@ -26,8 +84,81 @@
         width: 100% !important;
     }
 }
+@media (max-width: 1100px) {
+    .hero-container{
+        .hero.home{
+            .container-fluid{
+                background-image: url(../../images/background/sample5.png);
+                .container{
+                    .left-side{
+                        .hero-content{
+                            .talk-action{
+                                flex-direction: column;
+                                align-items: flex-start !important;
+                                .btn-talk{
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            div{
+                                .harmain33{
+                                    font-size: 70px;
+                                }
+                                .smaller{
+                                    padding-right: 160px;
+                                    line-height: unset;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero-video{
+            width: 62% !important;
+        }
+    }
+}
+
 
 @media (max-width: 993px) {
+    .hero-container{
+        padding-top: 80px !important;
+        .hero.home{
+            padding: 0px !important;
+            .container-fluid{
+                background-image: url(../../images/background/rotate.png);
+                background-size: 100% 100%;
+                padding: 50px 0px 470px 0px;
+                .container{
+                    max-width: 100%;
+                    .left-side{
+                        width: 100%;
+                        .hero-content{
+                            padding: 0px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            h1{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                .smaller{
+                                    padding: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero-video{
+            width: 100% !important;
+            height: 50% !important;
+            top: unset !important;
+            bottom: 0 !important;
+        }
+    }
     header {
         .navbar {
             .logo-navItems{

@@ -2,8 +2,9 @@
     padding: 0;
     @extend .bg-dark;
     @extend .text-white;
-    padding: 293px 0 185px;
-    background-color: $body-color;
+    // background-color: $body-color !important;
+    padding: 0!important;
+    background-color: transparent !important;
     .hero-content {
         overflow: hidden;
         h1{
@@ -147,5 +148,32 @@
 
     .actions {
         display: none;
+    }
+    &.home{
+        .container-fluid{
+            background-image: url(../../images/background/sample.png);
+            background-size: cover;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-video{
+            position: absolute;
+            top:0;
+            right:0;
+            width:50%;
+            height:100%;
+            video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .container-fluid{
+        .left-side{
+            .hero-content{
+                padding: 185px 0 185px;
+            }
+        }
     }
 }
