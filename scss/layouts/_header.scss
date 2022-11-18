@@ -27,6 +27,7 @@ header {
                 img {
                     width: 295px !important;
                     height: 56px !important;
+                    object-fit: contain;
                 }
             }
         }
@@ -38,7 +39,9 @@ header {
                     @extend .text-secondary;
                     @extend .text-uppercase;
                     @include font-normal;
-                    
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
                     &:hover {
                         @extend .text-primary;
                     }
@@ -49,7 +52,9 @@ header {
             }
         }
         .download-brochuer{
+            text-align: right;
             // btn btn-primary text-white text-uppercase
+            
             .btn-inquiry {
                 @extend .btn;
                 @extend .btn-primary;
@@ -60,6 +65,9 @@ header {
                 border: 0;
                 @include radius(30px);
                 margin-left: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
             }
         }
     }

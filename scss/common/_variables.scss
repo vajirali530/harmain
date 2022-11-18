@@ -21,6 +21,28 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Mukta', sans-serif;
+    src:    url('./../../fonts/Mukta-Bold.ttf') format('truetype'),
+            url('./../../fonts/Mukta-ExtraBold.ttf') format('truetype'),
+            url('./../../fonts/Mukta-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mukta', sans-serif;
+    src:    url('./../../fonts/Mukta-ExtraLight.ttf') format('truetype'),
+            url('./../../fonts/Mukta-Light.ttf') format('truetype'),
+            url('./../../fonts/Mukta-Medium.ttf') format('truetype'),
+            url('./../../fonts/Mukta-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 $body-bg: #FFFFFF;
 $body-color: #2C2E35;
 $primary: #E1A046;
@@ -31,6 +53,7 @@ $white: $body-bg;
 $gray:#F5F5F5;
 
 $font-family-sans-serif: 'Inter', sans-serif !default;
+$font-family-mukta:'Mukta', sans-serif;
 
 $enable-caret: false !default;
 $enable-rounded: true !default;

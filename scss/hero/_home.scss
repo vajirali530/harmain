@@ -6,6 +6,26 @@
     background-color: $body-color;
     .hero-content {
         overflow: hidden;
+        h1{
+            .small{
+                font-weight: 400 !important;
+                font-size: 32px;
+                line-height: 53px;
+            }
+            .harmain33{
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 100px; 
+            }
+            .smaller{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 70px; 
+            }
+            span{
+                font-family: $font-family-mukta !important;
+            }
+        }
     }
 
     h1 {
@@ -60,6 +80,9 @@
                     }
                 }
             }
+            svg{
+                margin-left: 9px;
+            }
         }
         .talk-view {
             display: inline-block;
@@ -67,14 +90,16 @@
             span {
                 display: block;
                 @extend .text-uppercase;
-                @include font-bold;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
             }
             a {
                 text-decoration: none;
                 @extend .text-white;
-                @include font-bold;
-                font-size: 28px;
-                line-height: 37px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
                 &:hover {
                     @extend .text-primary;
                 }
