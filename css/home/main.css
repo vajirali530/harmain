@@ -11480,6 +11480,9 @@ section .content .content-list .title-emailus, section .content .content-list .t
   width: 100%;
 }
 
+header {
+  height: 105px;
+}
 header .navbar {
   -moz-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -11896,6 +11899,9 @@ footer .footer-extra-link .content {
   bottom: 210px;
   left: -122px;
   transform: rotate(120deg);
+}
+.unit-plan-type2 .title-aminity {
+  text-align: right;
 }
 
 section .title {

@@ -1,15 +1,26 @@
 .hero {
-    background-image: url(../../images/project-detail-herobg.webp);
-    background-repeat: no-repeat;
+    background-image: url(../../images/background/hero.png);
+    @extend .text-white;
+    @extend .bg-dark;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    @extend .text-white;
-    @extend .bg-dark;
-
+    height: 440px;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(44, 46, 53, 0.75);
+    }
     .hero-image {
         max-width: 600px;
         visibility: hidden;
@@ -18,16 +29,73 @@
             height: auto;
         }
     }
-
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            background-image: url('../../images/icons/frame4.svg');
+            background-size: 100% 100%;
+            height: 100%;
+            width: 150px;
+            left: -222px;
+            top: -90px;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url('../../images/icons/frame2.svg');
+            background-size: 100% 100%;
+            height: 100%;
+            width: 150px;
+            left: -222px;
+            top: 90px;
+        }
+        .inner-hero-content{
+            &::before{
+                position: absolute;
+                content: "";
+                background-image: url('../../images/icons/frame3.svg');
+                background-size: 100% 100%;
+                height: 100%;
+                width: 150px;
+                right: -222px;
+                top: -90px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                background-image: url('../../images/icons/frame1.svg');
+                background-size: 100% 100%;
+                height: 100%;
+                width: 150px;
+                right: -222px;
+                top: 90px;
+            }
+        }
+        h1 {
+            display: inline-block;
+            @include font-bold;
+            @extend .text-uppercase;
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 77px;
+            margin: 0;
+            padding: 0;
+            color: $primary;  
+        }
+        p {
+            @include font-normal;
+            margin: 0;
+            padding: 0;
+            font-size: 36px;
+            line-height: 41px;
+            text-transform: uppercase;
+        }
         h1, h2 {
             span {
                 display: inline-block;

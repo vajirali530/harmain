@@ -71,7 +71,7 @@ $(document).ready(function () {
                 $.each(result, function (indexInArray, valueOfElement) {
                     $(".gallery").prepend(`
                         <a href='images/gallery/${valueOfElement.name}' class='small'>
-                            <img src='images/gallery/thumb/${valueOfElement.name}' class='lazy' alt='${valueOfElement.name}'>
+                            <img src='images/gallery/${valueOfElement.name}' class='lazy' alt='${valueOfElement.name}'>
                         </a>
                     `);
                 });

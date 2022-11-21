@@ -5,69 +5,39 @@
         position: relative;
         margin-left: calc(var(--bs-gutter-x) * .5);
         h1 {
-            font-size: 32px;
-            line-height: 30px;
             @extend .text-uppercase;
             @include font-bold;
-            background-color: #fff;
+            background-color: #F5F5F5;
+            display: inline-flex;
+            width: 342px;
+            height: 60px;
+            padding-left: 26px;
             position: relative;
-            padding: 10px 15px;
-            display: inline-block;
-
-            &::after {
+            align-items: center;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000 !important;
+            margin-bottom: 30px;
+            &::before{
                 content: "";
-                position: absolute;
-                top: -8px;
-                right: -8px;
                 display: block;
-                background-color: $dark-primary;
-                width: 25px;
-                height: 25px;
-                z-index: -1
-            }
-
-            &::before {
-                content: "";
                 position: absolute;
-                bottom: -8px;
-                right: -8px;
-                display: block;
-                background-color: $dark-primary;
-                width: 25px;
-                height: 25px;
-                z-index: -1
+                height: 100%;
+                width: 6px;
+                top: 0;
+                left: 0;
+                background-color: #9A2A23;
             }
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            top: -8px;
-            left: -8px;
-            display: block;
-            background-color: $dark-primary;
-            width: 25px;
-            height: 25px;
-            z-index: -1
-        }
-
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0px;
-            left: -8px;
-            display: block;
-            background-color: $dark-primary;
-            width: 25px;
-            height: 25px;
-            z-index: -1
         }
     }
 
     .contact-form {
         @include shadow;
-        border-radius: 15px;
+        border-radius: 20px;
         padding: 30px;
-
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+        background-color: white;
         .mode-form-group {
             &.inline-block {
                 &-mail {
@@ -199,11 +169,13 @@
         .send-btn {
             button {
                 @include radius(30px);
-                background-color: $primary;
+                background-color: $dark-primary;
                 padding: 10px 40px;
                 font-size: 20px;
                 color: #fff;
-
+                svg{
+                    margin-left: 12px;
+                }
                 &:hover {
                     background-color: $dark-primary;
                 }
@@ -231,6 +203,8 @@
         img {
             max-width: 100%;
             height: auto;
+            margin-left: -175px;
+            z-index: -1;
         }
     }
 }

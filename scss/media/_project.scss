@@ -67,6 +67,13 @@
         .navbar {
             padding: 0;
             .container {
+                .download-brochuer{
+                    display: none;
+                }
+                .logo-navItems{
+                    width: 100%;
+                    justify-content: space-between;
+                }
                 margin: 0;
                 padding: 0;
                 max-width: 100%;
