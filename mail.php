@@ -36,10 +36,11 @@ try {
 
     $mail->isHTML(true);        
     $mail->Subject = $subject;
-    $message = "DBKS";
     $mail->Body    = $message;
     try {
         $mail->send();
+        $status = true;
+
     } catch (Exception $e) {
         echo $mail->ErrorInfo;
     } 

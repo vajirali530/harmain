@@ -40,7 +40,7 @@
 
     .template .table .mail-img {
         height: 120px;
-        background-color: #579EA6;
+        background-color: #E1A046;
     }
 
     .template .table .mail-img img {
@@ -129,7 +129,7 @@
 
     .template .table tfoot {
         height: 90px;
-        background-color: #adadad;
+        background-color: #2C2E35;
     }
 
     .template .table tfoot .footer {

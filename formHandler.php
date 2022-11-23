@@ -36,9 +36,9 @@ if(isset($_POST['submit_contact_form']) && $_POST['submit_contact_form'] == 'sub
             }
             else{
                 ob_start(); // start output buffer
-                // require_once './emailtemplates/contact_email_template.php';
-                // $message = ob_get_contents(); // get contents of buffer
-                $message = "Testing"; 
+                require_once './emailtemplates/contact_email_template.php';
+                $message = ob_get_contents(); // get contents of buffer
+                
                 ob_end_clean();
                 if(sendmail(ADMIN_EMAIL, 'Mominsara Developers', $message, null)){
                     ob_start(); // start output buffer
