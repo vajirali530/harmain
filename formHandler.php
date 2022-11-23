@@ -6,14 +6,12 @@ require_once './constant.php';
 
 
 if(isset($_POST['submit_contact_form']) && $_POST['submit_contact_form'] == 'submit_contact_form'){
+
     try {
     
         $error = [];
         
-        // echo "<pre>";
-        // print_r($_POST);
-        // exit;
-        if(verifyCaptchaScore($_POST['recaptcha_response'])){
+        // if(verifyCaptchaScore($_POST['recaptcha_response'])){
             $email = $_POST["user_email"];
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
                 $error['user_email'] = "Not a valid Email";
@@ -38,8 +36,9 @@ if(isset($_POST['submit_contact_form']) && $_POST['submit_contact_form'] == 'sub
             }
             else{
                 ob_start(); // start output buffer
-                require_once './emailtemplates/contact_email_template.php';
-                $message = ob_get_contents(); // get contents of buffer
+                // require_once './emailtemplates/contact_email_template.php';
+                // $message = ob_get_contents(); // get contents of buffer
+                $message = "Testing"; 
                 ob_end_clean();
                 if(sendmail(ADMIN_EMAIL, 'Mominsara Developers', $message, null)){
                     ob_start(); // start output buffer
@@ -58,11 +57,11 @@ if(isset($_POST['submit_contact_form']) && $_POST['submit_contact_form'] == 'sub
                     exit;
                 }
             }
-        }else{
-            http_response_code(400);
-            echo json_encode(['toast'=>'Captcha validation failed.']);
-            exit;
-        }
+        // }else{
+        //     http_response_code(400);
+        //     echo json_encode(['toast'=>'Captcha validation failed.']);
+        //     exit;
+        // }
         
     } catch (Exception $e) {
         http_response_code(400);

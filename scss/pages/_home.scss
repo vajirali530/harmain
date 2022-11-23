@@ -88,6 +88,7 @@
             top: 20px;
             right: 0;
             z-index: -1;
+            left: unset;
         }
         &::before{
             position: absolute;
@@ -217,7 +218,6 @@ section {
                 }
             }
         }
-
         .content-list {
             padding: 0 40px;
             position: relative;

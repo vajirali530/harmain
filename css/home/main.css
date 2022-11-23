@@ -11557,9 +11557,6 @@ footer {
 footer div .footer-info .project-reraNumber .projectBy {
   margin-right: 24px;
 }
-footer .logo {
-  margin-right: 160px;
-}
 footer .brand-light {
   display: block;
 }
@@ -11896,6 +11893,7 @@ footer .footer-extra-link .content {
   top: 20px;
   right: 0;
   z-index: -1;
+  left: unset;
 }
 .unit-plan-type2::before {
   position: absolute;
@@ -12301,6 +12299,18 @@ button.mfp-close {
     padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
     padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
   }
+
+  footer .footer-link a {
+    font-size: 21px;
+  }
+
+  footer .footer-link .footer-address {
+    font-size: 18px;
+  }
+
+  footer .footer-extra-link .content {
+    font-size: 21px;
+  }
 }
 @media (max-width: 1300px) {
   .hero-container .hero.home .container-fluid, .hero-container .hero.home .container-sm, .hero-container .hero.home .container-md, .hero-container .hero.home .container-lg, .hero-container .hero.home .container-xl, .hero-container .hero.home .container-xxl {
@@ -12340,6 +12350,12 @@ button.mfp-close {
   }
   .hero-container .hero-video {
     width: 56% !important;
+  }
+
+  section .content .col-md-6 picture img {
+    transform: scale(1.5);
+    width: 400px !important;
+    height: 300px !important;
   }
 
   section.ourgallery .owl-carousel .item-container {
@@ -12667,6 +12683,12 @@ header .nav-mobile .quick-actions .action-email a:hover {
   .unit-plan-type1 .container .unit-plan-heading .under-contruction {
     margin-bottom: 50px;
   }
+
+  section .content .col-md-6 picture img {
+    transform: scale(1.3);
+    width: 400px !important;
+    height: 250px !important;
+  }
 }
 @media (max-width: 769px) {
   header .nav-mobile .nav-menu ul.nav .nav-item .nav-link {
@@ -12814,6 +12836,15 @@ section.bhk-3 .row.content .col-md-6 {
     margin-top: 10px;
   }
 
+  .unit-plan-type1 .container .row.content {
+    justify-content: center !important;
+  }
+  .unit-plan-type1 .container .row.content .col-md-6.left-block picture img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    transform: scale(1);
+  }
   .unit-plan-type1 .container .unit-plan-heading {
     justify-content: center !important;
     flex-direction: row;
@@ -12828,6 +12859,11 @@ section.bhk-3 .row.content .col-md-6 {
 
   .unit-plan-type1::after {
     width: 100%;
+  }
+
+  .unit-plan-type2 .container .unit-plan-heading .under-contruction {
+    margin-left: 25px;
+    margin-right: 0px !important;
   }
 }
 @media (max-width: 577px) {
@@ -12987,13 +13023,25 @@ section.bhk-3 .row.content .col-md-6 {
     margin-right: 10px;
   }
 
-  .webelieve .container .title {
-    font-size: 22px;
-    height: 50px;
+  .webelieve .container .title, .ourgallery .container .title {
+    font-size: 22px !important;
+    height: 50px !important;
   }
 
   section.aboutus .container .row.content .col-md-5.left-block p {
     font-size: 16px !important;
+  }
+
+  .unit-plan-type1 .container .unit-plan-heading {
+    justify-content: unset !important;
+    margin-bottom: 50px !important;
+  }
+  .unit-plan-type1 .container .unit-plan-heading .unit-plan {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .unit-plan-type1 .container .unit-plan-heading .under-contruction {
+    margin-bottom: 15px !important;
   }
 }
 @media (max-width: 430px) {
