@@ -12689,6 +12689,11 @@ header .nav-mobile .quick-actions .action-email a:hover {
     width: 400px !important;
     height: 250px !important;
   }
+
+  footer .container .logo img {
+    width: 150px;
+    height: 150px;
+  }
 }
 @media (max-width: 769px) {
   header .nav-mobile .nav-menu ul.nav .nav-item .nav-link {
@@ -12864,6 +12869,18 @@ section.bhk-3 .row.content .col-md-6 {
   .unit-plan-type2 .container .unit-plan-heading .under-contruction {
     margin-left: 25px;
     margin-right: 0px !important;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .logo {
+    margin-bottom: 15px;
+  }
+  footer .container .logo img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
   }
 }
 @media (max-width: 577px) {

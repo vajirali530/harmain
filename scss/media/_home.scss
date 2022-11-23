@@ -482,6 +482,16 @@
         width: 400px !important;
         height: 250px !important;
     }
+    footer{
+        .container{
+            .logo{
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 769px) {
@@ -683,6 +693,19 @@
     .unit-plan-type2 .container .unit-plan-heading .under-contruction{
         margin-left: 25px;
         margin-right: 0px !important;
+    }
+    footer{
+        .container{
+            flex-direction: column;
+            .logo{
+                margin-bottom: 15px;
+                img{
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
 
