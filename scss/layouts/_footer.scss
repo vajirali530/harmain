@@ -6,6 +6,12 @@ footer {
                     margin-right: 24px;
                 }
             }
+            .social-container{
+                display: flex;
+                .social-link:not(:last-child){
+                    margin-right: 8px;
+                }
+            }
         }
     }
     @extend .text-white;
@@ -55,17 +61,26 @@ footer {
             line-height: 29px;
             text-decoration: none;
             &:hover {
-                color: $dark-primary !important;
+                color: $primary !important;
             }
         }
         .social-link {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             svg{
                 border-radius: 50%;
             }
             &:hover {
                 svg {
+                    fill: white;
                     path {
-                        fill: $dark-primary;
+                        fill: $primary;
                     }
                 }
             }
@@ -120,5 +135,102 @@ footer {
                 @extend .text-primary;
             }
         }
+    }
+}
+
+@media (max-width:1200px) {
+    footer{
+        .container{
+            .row{
+                .logo{
+                    img{
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:992px) {  
+    footer{
+        .container{
+            .row{
+                .logo{
+                    img{
+                        width: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {  
+    footer{
+        .container{
+            .row{
+                .logo{
+                    img{
+                        width: 200px;
+                    }
+                }
+                .social-container{
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width:576px) {  
+    footer{
+        .container{
+            .row{
+                .logo{
+                    img{
+                        width: 150px;
+                    }
+                }
+                .footer-info{
+                    .row{
+                        div{
+                            .social-container{
+                                display: flex !important;
+                            }
+                            .footer-header{
+                                font-size: 20px;
+                            }
+                            .footer-link{
+                                span{
+                                    font-size: 18px;
+                                }
+                                a{
+                                    font-size: 16px;
+                                }
+                                .footer-address{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .project-reraNumber{
+                        div{
+                            .footer-extra-link{
+                                .title{
+                                    font-size: 18px;
+                                }
+                                .content{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section .content .content-list .title-aminity{
+        margin: 20px 0 10px !important;
+    }
+    .unit-plan-type2::before{
+        bottom: 130px !important;
     }
 }

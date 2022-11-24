@@ -11,6 +11,9 @@
 
         .gallery {
             margin: 0 0.65rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             img {
                 max-width: 100%;
                 height: auto;
@@ -18,9 +21,11 @@
 
             a {
                 display: block;
-                height: auto;
-                margin: 0.5rem;
                 overflow: hidden;
+                height: 489px;
+                width: 584px;
+                border: 2px solid #E2A652;
+                border-radius: 20px;
                 img {
                     width: 100%;
                     height: 100%;

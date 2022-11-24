@@ -11516,6 +11516,34 @@ header .nav-mobile {
     width: 100%;
     justify-content: space-between;
   }
+
+  header {
+    height: 83px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav-mobile .nav-menu ul.nav .nav-item .nav-link img {
+    height: 15px;
+    width: 20px;
+    margin-left: 15px !important;
+  }
+
+  header .nav-mobile .nav-menu ul.nav .nav-item .nav-link {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call .title, header .nav-mobile .quick-actions .action-email .title {
+    font-size: 18px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call a, header .nav-mobile .quick-actions .action-email a {
+    font-size: 16px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call {
+    margin-bottom: 15px !important;
+  }
 }
 footer {
   padding: 70px 0;
@@ -11523,6 +11551,12 @@ footer {
 }
 footer div .footer-info .project-reraNumber .projectBy {
   margin-right: 24px;
+}
+footer div .footer-info .social-container {
+  display: flex;
+}
+footer div .footer-info .social-container .social-link:not(:last-child) {
+  margin-right: 8px;
 }
 footer .brand-light {
   display: block;
@@ -11573,13 +11607,26 @@ footer .footer-link a {
   text-decoration: none;
 }
 footer .footer-link a:hover {
-  color: #9A2A23 !important;
+  color: #E1A046 !important;
+}
+footer .footer-link .social-link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .footer-link .social-link svg {
   border-radius: 50%;
 }
+footer .footer-link .social-link:hover svg {
+  fill: white;
+}
 footer .footer-link .social-link:hover svg path {
-  fill: #9A2A23;
+  fill: #E1A046;
 }
 footer .footer-link .footer-address {
   font-family: "Inter", sans-serif;
@@ -11629,6 +11676,58 @@ footer .footer-extra-link .content {
 }
 .copyrights .copyright-text a {
   text-decoration: none;
+}
+@media (max-width: 1200px) {
+  footer .container .row .logo img {
+    width: 160px;
+  }
+}
+@media (max-width: 992px) {
+  footer .container .row .logo img {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  footer .container .row .logo img {
+    width: 200px;
+  }
+  footer .container .row .social-container {
+    display: flex !important;
+  }
+}
+@media (max-width: 576px) {
+  footer .container .row .logo img {
+    width: 150px;
+  }
+  footer .container .row .footer-info .row div .social-container {
+    display: flex !important;
+  }
+  footer .container .row .footer-info .row div .footer-header {
+    font-size: 20px;
+  }
+  footer .container .row .footer-info .row div .footer-link span {
+    font-size: 18px;
+  }
+  footer .container .row .footer-info .row div .footer-link a {
+    font-size: 16px;
+  }
+  footer .container .row .footer-info .row div .footer-link .footer-address {
+    font-size: 16px;
+  }
+  footer .container .row .footer-info .project-reraNumber div .footer-extra-link .title {
+    font-size: 18px;
+  }
+  footer .container .row .footer-info .project-reraNumber div .footer-extra-link .content {
+    font-size: 16px;
+  }
+
+  section .content .content-list .title-aminity {
+    margin: 20px 0 10px !important;
+  }
+
+  .unit-plan-type2::before {
+    bottom: 130px !important;
+  }
 }
 .hero {
   height: 440px;
@@ -12252,11 +12351,6 @@ header .nav-mobile .quick-actions .action-email a:hover {
   }
   header .nav-mobile .quick-actions .action-call {
     margin-bottom: 20px;
-  }
-
-  footer .container .logo img {
-    width: 150px;
-    height: 150px;
   }
 }
 @media (max-width: 769px) {

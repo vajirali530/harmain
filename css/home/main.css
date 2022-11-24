@@ -11559,6 +11559,34 @@ header .nav-mobile {
     width: 100%;
     justify-content: space-between;
   }
+
+  header {
+    height: 83px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav-mobile .nav-menu ul.nav .nav-item .nav-link img {
+    height: 15px;
+    width: 20px;
+    margin-left: 15px !important;
+  }
+
+  header .nav-mobile .nav-menu ul.nav .nav-item .nav-link {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call .title, header .nav-mobile .quick-actions .action-email .title {
+    font-size: 18px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call a, header .nav-mobile .quick-actions .action-email a {
+    font-size: 16px !important;
+  }
+
+  header .nav-mobile .quick-actions .action-call {
+    margin-bottom: 15px !important;
+  }
 }
 footer {
   padding: 70px 0;
@@ -11566,6 +11594,12 @@ footer {
 }
 footer div .footer-info .project-reraNumber .projectBy {
   margin-right: 24px;
+}
+footer div .footer-info .social-container {
+  display: flex;
+}
+footer div .footer-info .social-container .social-link:not(:last-child) {
+  margin-right: 8px;
 }
 footer .brand-light {
   display: block;
@@ -11616,13 +11650,26 @@ footer .footer-link a {
   text-decoration: none;
 }
 footer .footer-link a:hover {
-  color: #9A2A23 !important;
+  color: #E1A046 !important;
+}
+footer .footer-link .social-link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer .footer-link .social-link svg {
   border-radius: 50%;
 }
+footer .footer-link .social-link:hover svg {
+  fill: white;
+}
 footer .footer-link .social-link:hover svg path {
-  fill: #9A2A23;
+  fill: #E1A046;
 }
 footer .footer-link .footer-address {
   font-family: "Inter", sans-serif;
@@ -11672,6 +11719,58 @@ footer .footer-extra-link .content {
 }
 .copyrights .copyright-text a {
   text-decoration: none;
+}
+@media (max-width: 1200px) {
+  footer .container .row .logo img {
+    width: 160px;
+  }
+}
+@media (max-width: 992px) {
+  footer .container .row .logo img {
+    width: 140px;
+  }
+}
+@media (max-width: 768px) {
+  footer .container .row .logo img {
+    width: 200px;
+  }
+  footer .container .row .social-container {
+    display: flex !important;
+  }
+}
+@media (max-width: 576px) {
+  footer .container .row .logo img {
+    width: 150px;
+  }
+  footer .container .row .footer-info .row div .social-container {
+    display: flex !important;
+  }
+  footer .container .row .footer-info .row div .footer-header {
+    font-size: 20px;
+  }
+  footer .container .row .footer-info .row div .footer-link span {
+    font-size: 18px;
+  }
+  footer .container .row .footer-info .row div .footer-link a {
+    font-size: 16px;
+  }
+  footer .container .row .footer-info .row div .footer-link .footer-address {
+    font-size: 16px;
+  }
+  footer .container .row .footer-info .project-reraNumber div .footer-extra-link .title {
+    font-size: 18px;
+  }
+  footer .container .row .footer-info .project-reraNumber div .footer-extra-link .content {
+    font-size: 16px;
+  }
+
+  section .content .content-list .title-aminity {
+    margin: 20px 0 10px !important;
+  }
+
+  .unit-plan-type2::before {
+    bottom: 130px !important;
+  }
 }
 .hero {
   padding: 0;
@@ -12239,6 +12338,7 @@ section.ourgallery .owl-carousel .item-container {
 section.ourgallery .owl-carousel .item-container picture img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .mfp-zoom-out-cur .mfp-bg {
@@ -12699,11 +12799,6 @@ header .nav-mobile .quick-actions .action-email a:hover {
     width: 400px !important;
     height: 250px !important;
   }
-
-  footer .container .logo img {
-    width: 150px;
-    height: 150px;
-  }
 }
 @media (max-width: 769px) {
   header .nav-mobile .nav-menu ul.nav .nav-item .nav-link {
@@ -12891,7 +12986,7 @@ section.bhk-3 .row.content .col-md-6 {
 }
 @media (max-width: 577px) {
   .hero-container .hero.home .container-fluid, .hero-container .hero.home .container-sm, .hero-container .hero.home .container-md, .hero-container .hero.home .container-lg, .hero-container .hero.home .container-xl, .hero-container .hero.home .container-xxl {
-    padding: 20px 0px 300px 0px;
+    padding: 50px 0px 332px 0px;
   }
 
   .container-fluid .container .row .left-side .hero-content .talk-action, .container-sm .container .row .left-side .hero-content .talk-action, .container-md .container .row .left-side .hero-content .talk-action, .container-lg .container .row .left-side .hero-content .talk-action, .container-xl .container .row .left-side .hero-content .talk-action, .container-xxl .container .row .left-side .hero-content .talk-action {
@@ -12911,8 +13006,8 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   section .title {
-    font-size: 22px;
-    line-height: 20px;
+    font-size: 30px !important;
+    line-height: 40px !important;
     margin-bottom: 20px;
   }
   section.bhk-plan .title {
@@ -12932,13 +13027,13 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   .hero h1 span.small, .hero .h1 span.small {
-    font-size: 25px !important;
-    line-height: 24px;
+    font-size: 18px !important;
+    line-height: 25px !important;
   }
 
   .hero h1 span.harmain33, .hero .h1 span.harmain33 {
-    font-size: 55px !important;
-    line-height: 60px !important;
+    font-size: 30px !important;
+    line-height: 40px !important;
   }
 
   .hero h1 span, .hero .h1 span {
@@ -12947,8 +13042,8 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   .hero h1 span.smaller, .hero .h1 span.smaller {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px !important;
+    line-height: 25px !important;
     text-transform: none !important;
   }
 
@@ -12958,7 +13053,7 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   .hero .talk-action .btn-talk {
-    padding: 12px 25px;
+    padding: 10px 20px;
   }
 
   .hero .talk-action .talk-view {
@@ -13027,9 +13122,7 @@ section.bhk-3 .row.content .col-md-6 {
   }
   section .content .content-list .plan-action-mobile a {
     display: block;
-    margin-right: 10px;
     width: 56px;
-    height: 56px;
   }
 
   section .content .col-md-4 .item h4, section .content .col-md-4 .item .h4 {
@@ -13037,7 +13130,7 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   section .content .col-md-4 .item p {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   section .content .col-md-4 img {
@@ -13047,8 +13140,9 @@ section.bhk-3 .row.content .col-md-6 {
   }
 
   .webelieve .container .title, .ourgallery .container .title {
-    font-size: 22px !important;
-    height: 50px !important;
+    font-size: 18px !important;
+    height: 40px !important;
+    width: 100%;
   }
 
   section.aboutus .container .row.content .col-md-5.left-block p {
@@ -13057,7 +13151,7 @@ section.bhk-3 .row.content .col-md-6 {
 
   .unit-plan-type1 .container .unit-plan-heading {
     justify-content: unset !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 0px !important;
   }
   .unit-plan-type1 .container .unit-plan-heading .unit-plan {
     margin-top: 40px;
@@ -13066,9 +13160,40 @@ section.bhk-3 .row.content .col-md-6 {
   .unit-plan-type1 .container .unit-plan-heading .under-contruction {
     margin-bottom: 15px !important;
   }
+  .unit-plan-type1 .container .row.content .left-block {
+    margin: 20px 0px !important;
+  }
 
   footer .footer-extra-link .content {
     font-size: 18px;
+  }
+
+  section.bhk-3 .container .unit-plan-heading .unit-plan .block {
+    font-size: 18px !important;
+  }
+
+  section.bhk-3 .container .unit-plan-heading .unit-plan h2, section.bhk-3 .container .unit-plan-heading .unit-plan .h2 {
+    margin-bottom: 0px !important;
+  }
+
+  .unit-plan-type1 .container .unit-plan-heading .under-contruction .title {
+    font-size: 18px !important;
+    margin-bottom: 0px !important;
+    line-height: 30px !important;
+  }
+
+  .unit-plan-type1 .container .unit-plan-heading .under-contruction {
+    margin-bottom: 10px !important;
+  }
+
+  .unit-plan-type1 .container .unit-plan-heading .view-detail .title {
+    font-size: 18px !important;
+  }
+
+  .unit-plan-type1 .container .unit-plan-heading .view-detail .title svg {
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 430px) {

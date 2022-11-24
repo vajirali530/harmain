@@ -171,10 +171,6 @@
             }
         }
     }
-    footer .container .logo img {
-        width: 150px;
-        height: 150px;
-    }
     .unit-plan{
         .plan {
             .head{
@@ -316,8 +312,9 @@
                             margin-bottom: 30px;
                             .head {
                                 .title {
-                                    font-size: 22px;
-                                    line-height: 30px;
+                                    font-size: 18px !important;
+                                    height: 40px !important;
+                                    width: 100%;
                                 }
                             }
                         }
@@ -339,7 +336,8 @@
                 align-items: center;
                 .title{
                     font-size: 18px !important;
-                    width: 210px !important;
+                    width: 200px !important;
+                    padding-left: 15px !important;
                 }
                 .block{
                     margin-bottom: 15px;
@@ -353,6 +351,7 @@
                     padding-right: 26px;
                     padding-left: 0px !important;
                     justify-content: flex-end;
+                    padding-right: 15px !important;
                 }
             }
         }

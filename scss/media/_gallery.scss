@@ -1,11 +1,31 @@
+@media (max-width:1400px) {
+    .gallery{
+        a{
+            height: 450px !important;
+            width: 500px !important;
+        }
+    }
+}
 @media (max-width: 1201px) {
     footer .footer-link a {
         font-size: 24px;
         line-height: 28px;
     }
+    .gallery{
+        a{
+            height: 400px !important;
+            width: 400px !important;
+        }
+    }
 }
 
 @media (max-width: 993px) {
+    .gallery{
+        a{
+            height: 300px !important;
+            width: 300px !important;
+        }
+    }
     .download-brochuer{
         display: none;
     }
@@ -164,13 +184,15 @@
             }
         }
     }
-    footer .container .logo img {
-        width: 150px;
-        height: 150px;
-    }
 }
 
 @media (max-width: 769px) {
+    .gallery{
+        a{
+            height: 489px !important;
+            width: 584px !important;
+        }
+    }
     .hero {
         height: 350px;
         .hero-content {
@@ -229,6 +251,16 @@
 }
 
 @media (max-width: 577px) {
+    .gallery{
+        a{
+            height: 300px !important;
+            width: 300px !important;
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
     .hero {
         .hero-content {
             h1 {

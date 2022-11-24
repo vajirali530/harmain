@@ -482,16 +482,6 @@
         width: 400px !important;
         height: 250px !important;
     }
-    footer{
-        .container{
-            .logo{
-                img{
-                    width: 150px;
-                    height: 150px;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 769px) {
@@ -707,7 +697,7 @@
 
 @media (max-width: 577px) {
     .hero-container .hero.home .container-fluid{
-        padding: 20px 0px 300px 0px;
+        padding: 50px 0px 332px 0px;
     }
     .container-fluid{
         .container{
@@ -751,8 +741,8 @@
     }
     section {
         .title {
-            font-size: 22px;
-            line-height: 20px;
+            font-size: 30px !important;
+            line-height: 40px !important;
             margin-bottom: 20px;
         }
 
@@ -781,20 +771,20 @@
         height: 44px !important;
     }
     .hero h1 span.small {
-        font-size: 25px !important;
-        line-height: 24px;
+        font-size: 18px !important;
+        line-height: 25px !important;
     }
     .hero h1 span.harmain33{
-        font-size: 55px !important;
-        line-height: 60px !important;
+        font-size: 30px !important;
+        line-height: 40px !important;
     }
     .hero h1 span, .hero .h1 span {
         font-size: 40px;
         line-height: 48px;
     }
     .hero h1 span.smaller, .hero .h1 span.smaller {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px !important;
+        line-height: 25px !important;
         text-transform: none !important;
     }
     body .hero .talk-action{
@@ -802,7 +792,7 @@
         justify-content: space-between !important;
     }
     .hero .talk-action .btn-talk {
-        padding: 12px 25px;
+        padding: 10px 20px;
     }
     .hero .talk-action .talk-view {
         margin-left: 12px;
@@ -851,16 +841,14 @@
         display: flex;
         a {
             display: block;
-            margin-right: 10px;
             width: 56px;
-            height: 56px;
         }
     }
     section .content .col-md-4 .item h4{
         font-size: 18px;
     }
     section .content .col-md-4 .item p{
-        font-size: 16px;
+        font-size: 16px !important;
     }
     section .content .col-md-4 img{
         width: 30px !important;
@@ -868,8 +856,9 @@
         margin-right: 10px;
     }
     .webelieve .container .title,.ourgallery .container .title{
-        font-size: 22px !important;
-        height: 50px !important;
+        font-size: 18px !important;
+        height: 40px !important;
+        width: 100%;
     }
     section.aboutus .container .row.content .col-md-5.left-block p{
         font-size: 16px !important;
@@ -878,7 +867,7 @@
         .container{
             .unit-plan-heading {
                 justify-content: unset !important;
-                margin-bottom: 50px !important;
+                margin-bottom: 0px !important;
                 .unit-plan{
                     margin-top: 40px;
                     width: 100%;
@@ -887,10 +876,37 @@
                     margin-bottom: 15px !important;
                 }
             }
+            .row.content{
+                .left-block{
+                    margin: 20px 0px !important;
+                }
+            }
         }
     }
     footer .footer-extra-link .content{
         font-size: 18px;
+    }
+    section.bhk-3 .container .unit-plan-heading .unit-plan .block{
+        font-size: 18px !important;
+    }
+    section.bhk-3 .container .unit-plan-heading .unit-plan h2{
+        margin-bottom: 0px !important;
+    }
+    .unit-plan-type1 .container .unit-plan-heading .under-contruction .title{
+        font-size: 18px !important;
+        margin-bottom: 0px !important;
+        line-height: 30px !important;
+    }
+    .unit-plan-type1 .container .unit-plan-heading .under-contruction{
+        margin-bottom: 10px !important;
+    }
+    .unit-plan-type1 .container .unit-plan-heading .view-detail .title{
+        font-size: 18px !important;
+    }
+    .unit-plan-type1 .container .unit-plan-heading .view-detail .title svg{
+        height: 18px;
+        width: 18px;
+        margin-left: 10px;
     }
 }
 @media (max-width: 430px) {
