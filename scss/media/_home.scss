@@ -698,12 +698,8 @@
         .container{
             flex-direction: column;
             .logo{
-                margin-bottom: 15px;
-                img{
-                    width: auto;
-                    height: auto;
-                    max-width: 100%;
-                }
+                margin-bottom: 50px;
+                text-align: center;
             }
         }
     }
@@ -892,6 +888,9 @@
                 }
             }
         }
+    }
+    footer .footer-extra-link .content{
+        font-size: 18px;
     }
 }
 @media (max-width: 430px) {

@@ -77,7 +77,7 @@ section {
     width: 100%;
     max-width: 400px;
     z-index: 20;
-    background-color: #fff;
+    background-color: #E1A046;
     transform: translateX(82%);
     transition: 0.3s transform;
   }
@@ -100,6 +100,7 @@ section {
     margin-left: 15px;
     font-size: 20px;
     line-height: 27px;
+    color: white;
   }
   .floating-widget .widget-container .wrapper .contact-action a {
     text-decoration: none;
@@ -11506,15 +11507,22 @@ header .nav-mobile {
     display: none;
   }
 }
+@media screen and (max-width: 993px) {
+  .download-brochuer {
+    display: none;
+  }
+
+  .logo-navItems {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 footer {
   padding: 70px 0;
   background-color: #2C2E35;
 }
 footer div .footer-info .project-reraNumber .projectBy {
   margin-right: 24px;
-}
-footer .logo {
-  margin-right: 160px;
 }
 footer .brand-light {
   display: block;
@@ -11648,10 +11656,13 @@ footer .footer-extra-link .content {
   display: block;
   margin: 0 auto;
   text-align: center;
+  position: relative;
   display: inline-block;
+}
+.hero .hero-content .inner-hero-content {
   position: relative;
 }
-.hero .hero-content::before {
+.hero .hero-content .inner-hero-content::before {
   position: absolute;
   content: "";
   background-image: url("../../images/icons/frame4.svg");
@@ -11661,7 +11672,7 @@ footer .footer-extra-link .content {
   left: -222px;
   top: -90px;
 }
-.hero .hero-content::after {
+.hero .hero-content .inner-hero-content::after {
   position: absolute;
   content: "";
   background-image: url("../../images/icons/frame2.svg");
@@ -11671,7 +11682,10 @@ footer .footer-extra-link .content {
   left: -222px;
   top: 90px;
 }
-.hero .hero-content .inner-hero-content::before {
+.hero .hero-content .inner-hero-content .hero-content-wrapper {
+  position: relative;
+}
+.hero .hero-content .inner-hero-content .hero-content-wrapper::before {
   position: absolute;
   content: "";
   background-image: url("../../images/icons/frame3.svg");
@@ -11681,7 +11695,7 @@ footer .footer-extra-link .content {
   right: -222px;
   top: -90px;
 }
-.hero .hero-content .inner-hero-content::after {
+.hero .hero-content .inner-hero-content .hero-content-wrapper::after {
   position: absolute;
   content: "";
   background-image: url("../../images/icons/frame1.svg");
@@ -11692,6 +11706,7 @@ footer .footer-extra-link .content {
   top: 90px;
 }
 .hero .hero-content h1, .hero .hero-content .h1 {
+  position: relative;
   display: inline-block;
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -11710,21 +11725,18 @@ footer .footer-extra-link .content {
   margin: 0;
   padding: 0;
   font-size: 36px;
-  line-height: 41px;
+  line-height: 44px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
+.plans .wrapper .plans-container .collection .unit-plan .threebhk-plan .head .title::before {
+  left: unset;
+  right: 0;
+}
 .plans .wrapper .plans-container .collection img {
   max-width: 100%;
   height: auto;
-}
-.plans .wrapper .plans-container .collection .unit-plan {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-auto-flow: row dense;
-  gap: 20px;
-  grid-row-gap: 50px;
 }
 .plans .wrapper .plans-container .collection .unit-plan .plan .head {
   margin-bottom: 20px;
@@ -11746,6 +11758,10 @@ footer .footer-extra-link .content {
 }
 .plans .wrapper .plans-container .collection .plan:nth-child(even):not(.unit-plan .plan) .head {
   justify-content: flex-end;
+}
+.plans .wrapper .plans-container .collection .plan:nth-child(even):not(.unit-plan .plan) .title::before {
+  left: unset;
+  right: 0;
 }
 .plans .wrapper .plans-container .collection .plan .head {
   overflow: hidden;
@@ -11819,11 +11835,14 @@ footer .footer-extra-link .content {
     font-size: 24px;
     line-height: 28px;
   }
+
+  .plans .wrapper .plans-container .collection .unit-plan .plan .head .title {
+    width: 300px;
+  }
 }
 @media (max-width: 993px) {
   .hero {
-    padding-top: 182px;
-    height: auto;
+    height: 400px;
   }
   .hero .hero-content h1, .hero .hero-content .h1 {
     font-size: 75px;
@@ -11833,10 +11852,31 @@ footer .footer-extra-link .content {
     font-size: 26px;
     line-height: 30px;
   }
+  .hero .hero-content .inner-hero-content::after, .hero .hero-content .inner-hero-content::before {
+    transform: scale(0.7);
+    left: -190px;
+  }
+  .hero .hero-content .inner-hero-content::before {
+    top: -80px;
+  }
+  .hero .hero-content .inner-hero-content::after {
+    top: 80px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after, .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    transform: scale(0.7);
+    right: -190px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    top: -80px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after {
+    top: 80px;
+  }
 
   section.plans .wrapper .plans-container .collection .plan .head .title {
     font-size: 24px;
     line-height: 34px;
+    margin-bottom: 15px !important;
   }
 
   footer .footer-link a {
@@ -11942,8 +11982,24 @@ header .nav-mobile .quick-actions .action-email a:hover {
   header .nav-mobile .quick-actions .action-call {
     margin-bottom: 20px;
   }
+
+  footer .container .logo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .unit-plan .plan .head {
+    flex-direction: column !important;
+  }
+  .unit-plan .plan .head .title {
+    font-size: 18px !important;
+    width: 244px !important;
+  }
 }
 @media (max-width: 769px) {
+  .hero {
+    height: 350px;
+  }
   .hero .hero-content h1, .hero .hero-content .h1 {
     font-size: 65px;
     line-height: 80px;
@@ -11952,13 +12008,30 @@ header .nav-mobile .quick-actions .action-email a:hover {
     font-size: 22px;
     line-height: 20px;
   }
+  .hero .hero-content .inner-hero-content::after, .hero .hero-content .inner-hero-content::before {
+    transform: scale(0.6);
+    left: -160px;
+  }
+  .hero .hero-content .inner-hero-content::before {
+    top: -70px;
+  }
+  .hero .hero-content .inner-hero-content::after {
+    top: 70px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after, .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    transform: scale(0.6);
+    right: -160px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    top: -70px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after {
+    top: 70px;
+  }
 
   section.plans .wrapper .plans-container .collection .plan .head .title {
     font-size: 20px;
     line-height: 30px;
-  }
-  section.plans .wrapper .plans-container .collection .plan .head .title::before {
-    height: 30px;
   }
 
   footer .container .row {
@@ -11977,6 +12050,11 @@ header .nav-mobile .quick-actions .action-email a:hover {
   footer .footer-header {
     margin-top: 20px !important;
   }
+
+  footer .container .logo {
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 @media (max-width: 577px) {
   .hero .hero-content h1, .hero .hero-content .h1 {
@@ -11986,6 +12064,26 @@ header .nav-mobile .quick-actions .action-email a:hover {
   .hero .hero-content p {
     font-size: 18px;
     line-height: 18px;
+  }
+  .hero .hero-content .inner-hero-content::after, .hero .hero-content .inner-hero-content::before {
+    transform: scale(0.4);
+    left: -120px;
+  }
+  .hero .hero-content .inner-hero-content::before {
+    top: -45px;
+  }
+  .hero .hero-content .inner-hero-content::after {
+    top: 60px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after, .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    transform: scale(0.4);
+    right: -120px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    top: -45px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after {
+    top: 60px;
   }
 
   header .navbar .nav-brand picture img {
@@ -12009,6 +12107,30 @@ header .nav-mobile .quick-actions .action-email a:hover {
 
   footer {
     padding: 40px 0;
+  }
+
+  footer .footer-extra-link .content {
+    font-size: 18px;
+  }
+
+  .unit-plan .plan .head {
+    flex-direction: row !important;
+    align-items: center;
+  }
+  .unit-plan .plan .head .title {
+    font-size: 18px !important;
+    width: 210px !important;
+  }
+  .unit-plan .plan .head .block {
+    margin-bottom: 15px;
+  }
+  .unit-plan .threebhk-plan.plan .head {
+    flex-direction: row-reverse !important;
+  }
+  .unit-plan .threebhk-plan.plan .head .title {
+    padding-right: 26px;
+    padding-left: 0px !important;
+    justify-content: flex-end;
   }
 }
 @media (max-width: 430px) {

@@ -4,17 +4,23 @@
 
         .plans-container {
             .collection {
+                .unit-plan {
+                    .threebhk-plan {
+                        .head{
+                            .title{
+                                &::before{
+                                    left: unset;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
                 img {
                     max-width: 100%;
                     height: auto;
                 }
                 .unit-plan{
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-template-rows: repeat(4, auto);
-                    grid-auto-flow: row dense;
-                    gap: 20px;
-                    grid-row-gap: 50px;
                     .plan{
                         .head{
                             margin-bottom: 20px;
@@ -44,6 +50,12 @@
                     &:nth-child(even):not(.unit-plan .plan){
                         .head{
                             justify-content: flex-end;
+                        }
+                        .title{
+                            &::before{
+                                left: unset;
+                                right: 0;
+                            }
                         }
                     }
                     .head {

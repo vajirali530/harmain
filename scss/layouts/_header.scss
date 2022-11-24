@@ -83,3 +83,15 @@ header {
         display: none;
     }
 }
+@media screen and (max-width: 993px) {
+    .download-brochuer{
+        display: none;
+    }
+    .logo-navItems {
+        width: 100%;
+        justify-content: space-between;
+    }
+    header{
+        height: 83px;
+    }
+}

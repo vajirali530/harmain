@@ -77,7 +77,7 @@ section {
     width: 100%;
     max-width: 400px;
     z-index: 20;
-    background-color: #fff;
+    background-color: #E1A046;
     transform: translateX(82%);
     transition: 0.3s transform;
   }
@@ -100,6 +100,7 @@ section {
     margin-left: 15px;
     font-size: 20px;
     line-height: 27px;
+    color: white;
   }
   .floating-widget .widget-container .wrapper .contact-action a {
     text-decoration: none;
@@ -11530,15 +11531,26 @@ header .nav-mobile {
     display: none;
   }
 }
+@media screen and (max-width: 993px) {
+  .download-brochuer {
+    display: none;
+  }
+
+  .logo-navItems {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header {
+    height: 83px;
+  }
+}
 footer {
   padding: 70px 0;
   background-color: #2C2E35;
 }
 footer div .footer-info .project-reraNumber .projectBy {
   margin-right: 24px;
-}
-footer .logo {
-  margin-right: 160px;
 }
 footer .brand-light {
   display: block;
@@ -11655,7 +11667,7 @@ footer .footer-extra-link .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 440px;
+  height: 440px !important;
 }
 .hero::before {
   position: absolute;
@@ -11683,26 +11695,6 @@ footer .footer-extra-link .content {
   display: inline-block;
   position: relative;
 }
-.hero .hero-content::before {
-  position: absolute;
-  content: "";
-  background-image: url("../../images/icons/frame4.svg");
-  background-size: 100% 100%;
-  height: 100%;
-  width: 150px;
-  left: -222px;
-  top: -90px;
-}
-.hero .hero-content::after {
-  position: absolute;
-  content: "";
-  background-image: url("../../images/icons/frame2.svg");
-  background-size: 100% 100%;
-  height: 100%;
-  width: 150px;
-  left: -222px;
-  top: 90px;
-}
 .hero .hero-content .inner-hero-content::before {
   position: absolute;
   content: "";
@@ -11721,6 +11713,26 @@ footer .footer-extra-link .content {
   height: 100%;
   width: 150px;
   right: -222px;
+  top: 90px;
+}
+.hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/icons/frame4.svg");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 150px;
+  left: -222px;
+  top: -90px;
+}
+.hero .hero-content .inner-hero-content .hero-content-wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/icons/frame2.svg");
+  background-size: 100% 100%;
+  height: 100%;
+  width: 150px;
+  left: -222px;
   top: 90px;
 }
 .hero .hero-content h1, .hero .hero-content .h1 {
@@ -12359,8 +12371,7 @@ button.mfp-close {
   }
 
   .hero {
-    padding-top: 110px;
-    height: auto;
+    height: 400px !important;
   }
   .hero .hero-image {
     text-align: center;
@@ -12378,6 +12389,26 @@ button.mfp-close {
   }
   .hero .hero-content .talk-action .btn-talk {
     padding: 15px 50px;
+  }
+  .hero .hero-content .inner-hero-content::after, .hero .hero-content .inner-hero-content::before {
+    transform: scale(0.7);
+    right: -190px;
+  }
+  .hero .hero-content .inner-hero-content::before {
+    top: -80px;
+  }
+  .hero .hero-content .inner-hero-content::after {
+    top: 80px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after, .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    transform: scale(0.7);
+    left: -190px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::before {
+    top: -80px;
+  }
+  .hero .hero-content .inner-hero-content .hero-content-wrapper::after {
+    top: 80px;
   }
 
   .hero h1 span.small, .hero .h1 span.small, .hero h2 span.small, .hero .h2 span.small {
@@ -12576,6 +12607,27 @@ header .nav-mobile .quick-actions .action-email a:hover {
 
   footer .footer-header {
     margin-top: 20px !important;
+  }
+
+  .inner-hero-content::after, .inner-hero-content::before {
+    transform: scale(0.6) !important;
+    right: -160px !important;
+  }
+  .inner-hero-content::before {
+    top: -70px !important;
+  }
+  .inner-hero-content::after {
+    top: 70px !important;
+  }
+  .inner-hero-content .hero-content-wrapper::after, .inner-hero-content .hero-content-wrapper::before {
+    transform: scale(0.6) !important;
+    left: -160px !important;
+  }
+  .inner-hero-content .hero-content-wrapper::before {
+    top: -70px !important;
+  }
+  .inner-hero-content .hero-content-wrapper::after {
+    top: 70px !important;
   }
 }
 @media (max-width: 577px) {

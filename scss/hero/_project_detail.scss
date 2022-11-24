@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 440px;
+    height: 440px !important;
     &::before{
         position: absolute;
         content: "";
@@ -35,26 +35,6 @@
         text-align: center;
         display: inline-block;
         position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            background-image: url('../../images/icons/frame4.svg');
-            background-size: 100% 100%;
-            height: 100%;
-            width: 150px;
-            left: -222px;
-            top: -90px;
-        }
-        &::after{
-            position: absolute;
-            content: "";
-            background-image: url('../../images/icons/frame2.svg');
-            background-size: 100% 100%;
-            height: 100%;
-            width: 150px;
-            left: -222px;
-            top: 90px;
-        }
         .inner-hero-content{
             &::before{
                 position: absolute;
@@ -75,6 +55,28 @@
                 width: 150px;
                 right: -222px;
                 top: 90px;
+            }
+            .hero-content-wrapper{
+                &::before{
+                    position: absolute;
+                    content: "";
+                    background-image: url('../../images/icons/frame4.svg');
+                    background-size: 100% 100%;
+                    height: 100%;
+                    width: 150px;
+                    left: -222px;
+                    top: -90px;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background-image: url('../../images/icons/frame2.svg');
+                    background-size: 100% 100%;
+                    height: 100%;
+                    width: 150px;
+                    left: -222px;
+                    top: 90px;
+                }
             }
         }
         h1 {

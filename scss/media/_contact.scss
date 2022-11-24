@@ -1,4 +1,42 @@
+@media (max-width:1600px){
+    .hero{
+        .hero-content{
+            .inner-hero-content{
+                &::before,&::after{
+                    transform: scale(0.7);
+                    left: -130px;
+                }
+                &::before{
+                    top: -70px;
+                }
+                &::after{
+                    top: 70px;
+                }
+                .hero-content-wrapper{
+                    &::before,&::after{
+                        transform: scale(0.7);
+                        right: -130px;
+                    }
+                    &::before{
+                        top: -70px;
+                    }
+                    &::after{
+                        top: 70px;
+                    }
+                }
+            }
+        }
+    }  
+}
+@media (max-width:1400px) {
+    .contact-container .image img{
+        margin-left: -100px;
+    }
+}
 @media (max-width: 1201px) {
+    .contact-container .image img{
+        margin-left: -60px;
+    }
     footer .footer-link a {
         font-size: 24px;
         line-height: 28px;
@@ -6,7 +44,6 @@
 
     .hero {
         .hero-content {
-            width: 54%;
             .header {
                 h1 {
                     font-size: 55px;
@@ -17,7 +54,7 @@
         .contact-bg {
             width: 46%;
             .contact-info {
-                padding: 90px 35px 0px;
+                padding: 40px;
                 .wrapper {
                     .head {
                         h2 {
@@ -76,6 +113,9 @@
 }
 
 @media (max-width: 993px) {
+    header{
+        height: 82px;
+    }
     .download-brochuer{
         display: none;
     }
@@ -84,21 +124,46 @@
         justify-content:space-between;
     } 
     .hero {
-        padding-top: 82px;
-        height: auto;
-
+        .container,.contact-bg{
+            width: 50%;
+        }
         .hero-content {
             width: 53%;
             .header {
                 h1 {
-                    font-size: 45px;
+                    font-size: 28px;
                     line-height: 60px;
+                }
+            }
+            .inner-hero-content{
+                &::before,&::after{
+                    transform: scale(0.7);
+                    left: -130px;
+                }
+                &::before{
+                    top: -40px;
+                }
+                &::after{
+                    top: 40px;
+                }
+                .hero-content-wrapper{
+                    &::before,&::after{
+                        transform: scale(0.7);
+                        right: -130px;
+                    }
+                    &::before{
+                        top: -40px;
+                    }
+                    &::after{
+                        top: 40px;
+                    }
                 }
             }
         }
 
         .contact-bg {
             .contact-info {
+                padding: 20px;
                 .wrapper {
                     .head {
                         h2 {
@@ -216,16 +281,55 @@
             }
         }
     }
+    footer .container .logo img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 769px) {
     .hero {
+        .container{
+            height: 100%;
+            margin: 0px;
+            max-width: 100%;
+            width: 100%;
+        }
         padding-top: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 85px);
         .hero-content {
             width: 100%;
+            .inner-hero-content{
+                display: inline-block;
+                &::before,&::after{
+                    transform: scale(1.2);
+                    left: -120px;
+                }
+                &::before{
+                    top: -90px;
+                }
+                &::after{
+                    top: 90px;
+                }
+                .hero-content-wrapper{
+                    display: inline-block;
+                    &::before,&::after{
+                        transform: scale(1.2);
+                        right: -120px;
+                    }
+                    &::before{
+                        top: -90px;
+                    }
+                    &::after{
+                        top: 90px;
+                    }
+                }
+            }
             .header {
                 h1 {
-                    font-size: 35px;
+                    font-size: 50px;
                     line-height: 50px;
                 }
             }
@@ -243,8 +347,6 @@
             .contact-info {
                 padding: 20px 30px;
                 .wrapper {
-                    display: flex;
-                    flex-wrap: wrap;
                     .title {
                         padding-bottom: 10px;
                         h4 {
@@ -272,18 +374,11 @@
     }
     section {
         &.contact-container {
-            padding-top: 180px;
 
             .heading {
                 h1 {
                     font-size: 26px;
-                    padding: 8px 10px;
-
                     &::after {
-                        width: 22px;
-                        height: 22px;
-                    }
-                    &::before {
                         width: 22px;
                         height: 22px;
                     }
@@ -313,12 +408,34 @@
     footer .footer-header {
         margin-top: 20px !important;
     }
+    footer .container .logo {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .contact-container{
+        .container{
+            .row{
+                .form {
+                    flex-direction: column-reverse;
+                    .image{
+                        img{
+                            transform: rotate(270deg);
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 577px) {
     .hero {
-        padding-top: 82px;
-        min-height: 45vh;
+        height: auto;
+        .container{
+            min-height:45vh;
+            height: auto;
+        }
         .hero-content {
             .header {
                 h1 {
@@ -364,6 +481,9 @@
     }
     footer {
         padding: 40px 0;
+    }
+    footer .footer-extra-link .content {
+        font-size: 18px;
     }
 }
 @media (max-width: 430px) {

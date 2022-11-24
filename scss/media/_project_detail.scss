@@ -40,8 +40,8 @@
         justify-content:space-between;
     } 
     .hero {
-        padding-top: 110px;
-        height: auto;
+        height: 400px !important;
+        
 
         .hero-image {
             text-align: center;
@@ -61,6 +61,30 @@
 
                 .btn-talk {
                     padding: 15px 50px;
+                }
+            }
+            .inner-hero-content{
+                &::after,&::before{
+                    transform: scale(0.7);
+                    right:-190px;
+                }   
+                &::before{
+                    top: -80px;
+                }
+                &::after{
+                    top: 80px;
+                }
+                .hero-content-wrapper{
+                    &::after,&::before{
+                        transform: scale(0.7);
+                        left: -190px;
+                    }
+                    &::before{
+                        top: -80px;
+                    }
+                    &::after{
+                        top: 80px;
+                    }
                 }
             }
         }
@@ -274,6 +298,30 @@
     }
     footer .footer-header {
         margin-top: 20px !important;
+    }
+    .inner-hero-content{
+        &::after,&::before{
+            transform: scale(0.6) !important;
+            right:-160px !important;
+        }   
+        &::before{
+            top: -70px !important;
+        }
+        &::after{
+            top: 70px !important;
+        }
+        .hero-content-wrapper{
+            &::after,&::before{
+                transform: scale(0.6) !important;
+                left: -160px !important;
+            }
+            &::before{
+                top: -70px !important;
+            }
+            &::after{
+                top: 70px !important;
+            }
+        }
     }
 }
 

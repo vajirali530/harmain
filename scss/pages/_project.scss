@@ -7,7 +7,7 @@
             width: 650px;
             height: 166px;
             top: 20px;
-            left: 0;
+            left: unset;
             z-index: -1;
         }
         &::before{
@@ -19,6 +19,11 @@
             width: 400px;
             bottom: 120px;
             right: -100px;
+        }
+        .container{
+            .row.content{
+                align-items: center;
+            }
         }
     
 }
@@ -157,13 +162,13 @@ section {
             picture {
                 img {
                     width: 660px !important;
-                    height: auto;
+                    height: 502px !important;
+                    max-width: 100%;
                 }
             }
         }
 
         .content-list {
-            padding: 0 40px;
             position: relative;
             display: block;
             .plan-status {
@@ -205,12 +210,13 @@ section {
             }
             .aminity-list {
                 display: flex;
-                flex-wrap: wrap;
                 list-style: none;
                 margin: 0;
                 padding: 0;
                 justify-content: space-between;
+                overflow: auto;
                 .left-side-aminity{
+                    margin-right: 20px;
                     .items{
                         &:nth-child(even){
                             div{

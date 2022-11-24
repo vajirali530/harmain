@@ -11550,6 +11550,16 @@ header .nav-mobile {
     display: none;
   }
 }
+@media screen and (max-width: 993px) {
+  .download-brochuer {
+    display: none;
+  }
+
+  .logo-navItems {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
 footer {
   padding: 70px 0;
   background-color: #2C2E35;
@@ -12875,12 +12885,8 @@ section.bhk-3 .row.content .col-md-6 {
     flex-direction: column;
   }
   footer .container .logo {
-    margin-bottom: 15px;
-  }
-  footer .container .logo img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
   }
 }
 @media (max-width: 577px) {
@@ -13059,6 +13065,10 @@ section.bhk-3 .row.content .col-md-6 {
   }
   .unit-plan-type1 .container .unit-plan-heading .under-contruction {
     margin-bottom: 15px !important;
+  }
+
+  footer .footer-extra-link .content {
+    font-size: 18px;
   }
 }
 @media (max-width: 430px) {
