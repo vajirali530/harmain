@@ -3,11 +3,11 @@
 define('BASE_URL', $_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/".explode("/",$_SERVER['PHP_SELF'])[1]."/");
 define('IMAGE_URL', BASE_URL.'images');
 
-define('ADMIN_EMAIL', 'azimkhan.baloch@qalbit.com'); 
+define('ADMIN_EMAIL', 'vajirali.asamdi@qalbit.com'); 
 define('MAIL_USERNAME', 'vajirali.asamdi@qalbit.com');
 define('MAIL_USER_PASSWORD', 'qalb@2020');
 define('FROM_EMAIL', 'vajirali.asamdi@qalbit.com');
-define('FROM_NAME', 'Harmain');
+define('FROM_NAME', 'Harmain Realtors LLP');
 
 /**
  * Captcha

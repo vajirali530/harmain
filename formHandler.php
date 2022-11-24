@@ -38,12 +38,12 @@ if(isset($_POST['submit_contact_form']) && $_POST['submit_contact_form'] == 'sub
                 $message = ob_get_contents(); // get contents of buffer
 
                 ob_end_clean();
-                if(sendmail(ADMIN_EMAIL, 'Mominsara Developers', $message, null)){
+                if(sendmail(ADMIN_EMAIL, 'Harmain Realtors LLP', $message, null)){
                     ob_start(); // start output buffer
                     require_once './emailtemplates/contact_thankyou_template.php';
                     $message = ob_get_contents(); // get contents of buffer
                     ob_end_clean();
-                    sendmail($email, 'Mominsara Developers', $message, null);
+                    sendmail($email, 'Harmain Realtors LLP', $message, null);
 
                     http_response_code(200);
                     echo json_encode(['success'=> 'Form submited successfully']);
