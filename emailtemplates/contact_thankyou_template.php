@@ -36,11 +36,11 @@
 
     .template .table .mail-img {
         height: 120px;
-        background-color: #579EA6;
+        background-color: #9A2A23;
     }
 
     .template .table .mail-img img {
-        transform: translateY(19px);
+        transform: translateY(5px);
     }
 
     .template .table .mail-heading h1 {
@@ -246,7 +246,7 @@
     }
     .template .table tfoot {
         height: 90px;
-        background-color: #adadad;
+        background-color: #2C2E35;
     }
 
     .template .table tfoot .footer {
@@ -274,7 +274,7 @@
             <thead>
                 <tr>
                     <th class="mail-img" colspan="2">
-                        <img src="<?php echo IMAGE_URL?>/mail-box.png" alt="Mail" style="height:100%">
+                        <img src="<?php echo IMAGE_URL?>/mail-box.png" alt="Mail" style="height:75%">
                     </th>
                 </tr>
                 <tr>
@@ -293,18 +293,18 @@
             <tfoot>
                 <tr>
                     <td class="footer">
-                            <img src="<?php echo IMAGE_URL?>/logo/dark-480.png" alt="Mominsara Developers" width="150" height="30" style="display:inherit">
-                            <span style="color:#000;font-weight:bold;margin-top:8px;font-size:11px;">Mominsara Developers@2021</span>
+                        <img src="<?php echo IMAGE_URL?>/logo/secondary-logo.svg" alt="Mominsara Developers" width="150" height="30" style="display:inherit">
+                        <span style="font-weight:bold;margin-top:8px;font-size:11px;">Harmain Realtors LLP@2021</span>
                     </td>
-                    <td style="font-size: 10px; text-align:left">
-                        <address style="color:#000">
-                            MOMINSARA LIVING,
-                            Survey No. 586/5, FP No. 38, TP 85,
-                            Nr. Amwaaj Residency,
+                    <td style="font-size: 10px; text-align:left;color:white;">
+                        <address>
+                            Harmain 33,
+                            plot no. 33, t.p. scheme no. 85
+                            Nr. amwaaj residency, Sarkhej
                             12 Mtr. Road, Sarkhej,
                             Ahmedabad - 380055
                         </address>
-                        <a href="tel:+919913174482" style="color:#216169;margin-top:5px;font-size:12px;display:block;">+91 9913 174482</a>
+                        <a href="tel:+919913174482" style="color:#E1A046;margin-top:5px;font-size:12px;font-weight:700;display:block;text-decoration:none;">+91 9913 174482</a>
                     </td>
                 </tr>
             </tfoot>
