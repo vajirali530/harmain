@@ -493,3 +493,12 @@ button.mfp-close {
     color: #000;
     font-size: 3rem;
 }
+
+
+.plan-action{
+    .title-callus {
+        &:first-child{
+            padding-right: 70px;
+        }
+    }
+}

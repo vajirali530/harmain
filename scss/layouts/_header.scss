@@ -1,4 +1,9 @@
 header {
+    .logo-navItems{
+        .nav{
+            justify-content: flex-start !important;
+        }
+    }
     height: 105px;
     .navbar {
         @extend .navbar-light;

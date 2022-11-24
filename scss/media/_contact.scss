@@ -481,6 +481,35 @@
     footer .footer-extra-link .content {
         font-size: 18px;
     }
+    section.contact-container .heading h1{
+        font-size: 18px !important;
+        height: 40px !important;
+        width: 100%;
+    }
+    .contact-container .heading{
+        display: block !important;
+        margin: 0px;
+    }
+    .contact-container .contact-form .send-btn button{
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+    .hero .hero-content .inner-hero-content .hero-content-wrapper::before{
+        transform: scale(0.8);
+        top: -40px;
+    }
+    .hero .hero-content .inner-hero-content .hero-content-wrapper::after{
+        transform: scale(0.8);
+        top:40px;
+    }
+    .hero .hero-content .inner-hero-content::before{
+        transform: scale(0.8);
+        top: -40px;
+    }
+    .hero .hero-content .inner-hero-content::after{
+        transform: scale(0.8);
+        top: 40px;
+    }
 }
 @media (max-width: 430px) {
     section {

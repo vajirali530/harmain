@@ -8,6 +8,8 @@ RewriteRule ^3bhk-project-back$ project-3bhk-back.html [L]
 RewriteRule ^gallery$ gallery.html [L]
 RewriteRule ^contact-us$ contact-us.html [L]
 RewriteRule ^upload-images$ upload-image.html [L]
+RewriteRule ^unit-plan-type1$ unit-plan-type1.html [L]
+RewriteRule ^unit-plan-type2$ unit-plan-type2.html [L]
 RewriteRule ^404$ 404.html [L]
 ErrorDocument 404 https://dev.qalbit.com/mominsara/404
 
