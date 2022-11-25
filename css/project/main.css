@@ -11647,6 +11647,7 @@ footer .footer-link .footer-address {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 footer .footer-extra-link .title {
   font-family: "Inter", sans-serif;
@@ -12216,6 +12217,10 @@ section.ourgallery .owl-carousel .item-container picture img {
   height: 100%;
 }
 
+.plan-action .title-callus {
+  width: 225px;
+}
+
 @media (max-width: 1600px) {
   .unit-plan-type1::after {
     width: 500px;
@@ -12255,6 +12260,18 @@ section.ourgallery .owl-carousel .item-container picture img {
   }
 }
 @media (max-width: 993px) {
+  .plan-action .title-callus {
+    text-align: left !important;
+  }
+
+  .plan-action .title-emailus {
+    text-align: left !important;
+  }
+
+  section .content .content-list .title-inquiry {
+    text-align: left !important;
+  }
+
   .hero {
     height: 400px;
   }

@@ -36,6 +36,19 @@
 }
 
 @media (max-width: 993px) {
+    .plan-action{
+        .title-callus {
+            text-align: left !important;
+        }
+    }
+    .plan-action{
+        .title-emailus {
+            text-align: left !important;
+        }
+    }
+    section .content .content-list .title-inquiry {
+        text-align: left !important;
+    }
     .hero {
         height: 400px;
 

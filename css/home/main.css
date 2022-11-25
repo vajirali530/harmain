@@ -11685,6 +11685,7 @@ footer .footer-link .footer-address {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 footer .footer-extra-link .title {
   font-family: "Inter", sans-serif;
@@ -12371,8 +12372,8 @@ button.mfp-close {
   font-size: 3rem;
 }
 
-.plan-action .title-callus:first-child {
-  padding-right: 70px;
+.plan-action .title-callus {
+  width: 225px;
 }
 
 @media (max-width: 1600px) {
@@ -12567,6 +12568,18 @@ button.mfp-close {
   }
 }
 @media (max-width: 993px) {
+  .plan-action .title-callus {
+    text-align: left !important;
+  }
+
+  .plan-action .title-emailus {
+    text-align: left !important;
+  }
+
+  section .content .content-list .title-inquiry {
+    text-align: left !important;
+  }
+
   header {
     height: 82px;
   }
